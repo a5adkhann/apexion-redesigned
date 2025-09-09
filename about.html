@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <title>APEXION</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/animations.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+        integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+        integrity="sha512-XcIsjKMcuVe0Ucj/xgIXQnytNwBttJbNjltBV18IOnru2lDPe9KRRyvCXw6Y5H415vbBLRm8+q6fmLUU7DfO6Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header
+        class="absolute top-0 left-0 w-full z-30 bg-gradient-to-r from-[#0f1a75] to-[#000000]  text-white  border-b border-white/10"
+      >
+        <div
+          class="max-w-7xl mx-auto flex items-center justify-between px-6 py-3 text-sm"
+        >
+          <div
+            class="toggle text-2xl font-bold md:hidden cursor-pointer"
+            id="menu-btn"
+          >
+            <i class="ri-menu-line"></i>
+          </div>
+
+          <div class="flex items-center space-x-6 h-10">
+            <img src="./media/logo.png" class="h-6" alt="" />
+          </div>
+
+          <nav>
+            <ul class="hidden md:flex space-x-6 font-medium">
+              <li>
+                <a
+                  href="./index.html"
+                  class="hover:underline hover:decoration-blue-600 underline-offset-4"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./about.html"
+                  class="hover:underline hover:decoration-blue-600 underline-offset-4"
+                  >About</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <div class="flex items-center space-x-6">
+            <button class="hover:text-[#0f1a75]">
+              <i class="ri-search-line"></i>
+            </button>
+            <button class="hover:text-[#0f1a75]">
+              <i class="ri-global-line"></i>
+            </button>
+            <button class="hover:text-[#0f1a75]">
+              <i class="ri-arrow-down-line"></i>
+            </button>
+          </div>
+        </div>
+      </header>
+
+    <!-- About -->
+
+    <section class="max-w-6xl mx-auto px-5 py-20 md:py-40 flex flex-col md:flex-row items-center gap-12">
+
+        <div class="md:w-1/2 space-y-6">
+            <h2 class="text-3xl md:text-4xl font-bold leading-snug">
+                Shaping the Future with Technology and Responsibility
+            </h2>
+            <p class="text-gray-600 leading-relaxed">
+                At <span class="font-semibold text-[#0f1a75]">Apexion Information Technology</span>,
+                we believe true innovation goes hand in hand with responsibility.
+                Our goal is to deliver cutting-edge digital solutions while ensuring
+                each step contributes to a smarter, greener, and more inclusive future.
+                By adopting sustainable practices, we reduce environmental impact
+                and empower businesses and communities worldwide.
+                Together, we’re building a future that’s technologically advanced,
+                socially conscious, and environmentally responsible.
+            </p>
+            <button
+                class="bg-gradient-to-r from-[#0f1a75] to-black text-white px-6 py-3 rounded-md shadow hover:opacity-90 transition">
+                More Info
+            </button>
+        </div>
+
+        <div class="md:w-1/2 overflow-hidden rounded-xl shadow-lg">
+            <img src="./media/about.png" alt="About Apexion"
+                class="w-full h-[350px] object-cover transform hover:scale-125 transition duration-500 ease-in-out" />
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="bg-gray-100 text-gray-800 pt-16 pb-8">
+      <div
+        class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10"
+      >
+        <!-- Services -->
+        <div>
+          <h4 class="font-semibold text-lg mb-4">Services</h4>
+          <ul class="space-y-2">
+            <li><span class="font-semibold">AI & Data</span></li>
+            <li>AI Consulting & Solutions</li>
+            <li>Generative AI</li>
+            <li>Advanced Analytics</li>
+            <li>Data Intelligence</li>
+            <li class="font-semibold mt-3">Digital & Design</li>
+            <li>Digital Transformation</li>
+            <li>UI/UX & Experience Design</li>
+            <li>Smart Platforms</li>
+            <li class="font-semibold mt-3">Architecture</li>
+            <li>Architectural Design</li>
+            <li>Urban Planning</li>
+            <li>3D Visualization</li>
+          </ul>
+        </div>
+
+        <!-- Cloud & Infra -->
+        <div>
+          <h4 class="font-semibold text-lg mb-4">Technology & Cloud</h4>
+          <ul class="space-y-2">
+            <li>Cloud Architecture & Migration</li>
+            <li>Cloud Applications</li>
+            <li>Systems Modernization</li>
+            <li>Managed Services</li>
+            <li class="font-semibold mt-3">Digital Infrastructure</li>
+            <li class="font-semibold">Cybersecurity</li>
+            <li class="font-semibold">Emerging Tech</li>
+            <li class="font-semibold">Smart Building Solutions</li>
+          </ul>
+        </div>
+
+        <!-- Industries -->
+        <div>
+          <h4 class="font-semibold text-lg mb-4">Industries</h4>
+          <ul class="space-y-2">
+            <li>Real Estate & Construction</li>
+            <li>Banking & Financial Services</li>
+            <li>Public Sector & Smart Cities</li>
+            <li>Healthcare & Life Sciences</li>
+            <li>Retail & E-Commerce</li>
+          </ul>
+
+          <h4 class="font-semibold text-lg mt-6 mb-4">Insights</h4>
+          <ul class="space-y-2">
+            <li>Case Studies</li>
+            <li>Newsroom</li>
+            <li>Whitepapers / E-Books</li>
+            <li>Blogs</li>
+          </ul>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="font-semibold text-lg mb-4">Quick Links</h4>
+          <ul class="space-y-2">
+            <li>Who We Are</li>
+            <li>Careers</li>
+            <li>Our Leadership</li>
+            <li>Partnerships</li>
+            <li>Contact Us</li>
+          </ul>
+
+          <div class="mt-6">
+            <h4 class="font-semibold mb-2">Subscribe</h4>
+            <p class="text-sm text-gray-600 mb-3">
+              Stay updated on how technology and architecture are shaping the
+              future.
+            </p>
+            <form class="flex">
+              <input
+                type="email"
+                placeholder="Enter your email here"
+                class="w-full px-3 py-2 border border-gray-300 rounded-l-md focus:outline-none"
+              />
+              <button
+                class="bg-gradient-to-r from-[#0f1a75] to-[#000000] text-white px-4 py-2 rounded-r-md"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="max-w-7xl mx-auto px-6 mt-12 border-t border-gray-200 pt-6 flex flex-col md:flex-row items-center justify-between text-sm text-gray-500"
+      >
+        <div class="flex space-x-6 mb-4 md:mb-0">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Sitemap</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+
+        <p>@ 2025 Apexion Ltd. All Rights Reserved.</p>
+
+        <div class="flex space-x-4 mt-4 md:mt-0">
+          <a href="https://www.linkedin.com/company/apexionltd"
+            ><i class="ri-linkedin-box-fill text-2xl hover:text-[#0f1a75]"></i
+          ></a>
+          <a href="https://www.facebook.com/apexionltd"
+            ><i
+              class="ri-facebook-circle-fill text-2xl hover:text-[#0f1a75]"
+            ></i
+          ></a>
+          <a href="https://www.instagram.com/apexionagency"
+            ><i class="ri-instagram-line text-2xl hover:text-[#0f1a75]"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
