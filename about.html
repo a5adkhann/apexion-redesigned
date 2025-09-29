@@ -1,110 +1,321 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
-    <title>APEXION</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="./css/animations.css">
-    <link rel="stylesheet" href="./css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Apexion</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/animations.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
-        integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
-        integrity="sha512-XcIsjKMcuVe0Ucj/xgIXQnytNwBttJbNjltBV18IOnru2lDPe9KRRyvCXw6Y5H415vbBLRm8+q6fmLUU7DfO6Q=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+      integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+      integrity="sha512-XcIsjKMcuVe0Ucj/xgIXQnytNwBttJbNjltBV18IOnru2lDPe9KRRyvCXw6Y5H415vbBLRm8+q6fmLUU7DfO6Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-</head>
-<body>
+  <body>
+    <!-- Navbar + Hero Section (About Us Page) -->
+<div class="text-white relative w-full h-screen overflow-hidden">
+  <!-- Scroll Progress Bar -->
+  <div
+    id="scroll-progress"
+    class="fixed top-0 left-0 h-[5px] w-0 bg-gradient-to-r from-[#0f1a75] to-[#FFFFFF] z-[9999]"
+  ></div>
 
-    <!-- Navbar -->
-    <header
-        class="absolute top-0 left-0 w-full z-30 bg-gradient-to-r from-[#0f1a75] to-[#000000]  text-white  border-b border-white/10"
+  <!-- Navbar -->
+  <header
+    class="absolute top-0 left-0 w-full z-30 bg-transparent backdrop-blur-md border-b border-white/10"
+  >
+    <div
+      class="max-w-7xl mx-auto flex items-center justify-between px-6 py-3 text-sm"
+    >
+      <!-- Mobile Menu Button -->
+      <div
+        class="toggle text-2xl font-bold md:hidden cursor-pointer"
+        id="menu-btn"
       >
-        <div
-          class="max-w-7xl mx-auto flex items-center justify-between px-6 py-3 text-sm"
+        <i class="ri-menu-line"></i>
+      </div>
+
+      <!-- Logo -->
+      <div class="flex items-center space-x-6 h-10">
+        <img src="./media/logo.png" class="h-6" alt="Apexion Logo" />
+      </div>
+
+      <!-- Desktop Nav -->
+      <nav>
+        <ul class="hidden md:flex space-x-6 font-medium">
+          <li>
+            <a
+              href="./index.html"
+              class="hover:underline hover:decoration-blue-600 underline-offset-4"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="./about.html"
+              class="hover:underline hover:decoration-blue-600 underline-offset-4"
+              >About</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Socials + Theme Toggle -->
+      <div class="flex items-center space-x-6">
+        <button class="hover:text-[#0f1a75]">
+              <a href="https://www.linkedin.com/company/apexionltd">
+              <i class="ri-linkedin-fill"></i>
+              </a>
+            </button>
+            <button class="hover:text-[#0f1a75]">
+              <a href="https://www.facebook.com/apexionltd">
+              <i class="ri-facebook-fill"></i>
+              </a>
+            </button>
+            <button class="hover:text-[#0f1a75]">
+              <a href="https://www.instagram.com/apexionagency">
+              <i class="ri-instagram-line"></i>
+              </a>
+            </button>
+        <button id="theme-toggle" class="hover:text-[#0f1a75]">
+          <i id="theme-icon" class="ri-moon-line"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Sidebar (Mobile Nav) -->
+  <div
+    id="sidebar"
+    class="fixed top-0 left-0 h-full w-64 bg-transparent backdrop-blur-md text-white shadow-lg transform -translate-x-full transition-transform duration-300 ease-in-out z-40"
+  >
+    <div class="flex items-center justify-between p-4 border-b">
+      <button id="close-btn" class="text-2xl text-white">
+        <i class="ri-close-line"></i>
+      </button>
+    </div>
+    <ul class="p-4 space-y-4 font-medium">
+      <li>
+        <a
+          href="./index.html"
+          class="block hover:underline hover:decoration-blue-600 underline-offset-4"
+          >Home</a
         >
-          <div
-            class="toggle text-2xl font-bold md:hidden cursor-pointer"
-            id="menu-btn"
-          >
-            <i class="ri-menu-line"></i>
-          </div>
+      </li>
+      <li>
+        <a
+          href="./about.html"
+          class="block hover:underline hover:decoration-blue-600 underline-offset-4"
+          >About</a
+        >
+      </li>
+    </ul>
+  </div>
 
-          <div class="flex items-center space-x-6 h-10">
-            <img src="./media/logo.png" class="h-6" alt="" />
-          </div>
+  <!-- Overlay -->
+  <div id="overlay" class="fixed inset-0 bg-black bg-opacity-50 hidden z-30"></div>
 
-          <nav>
-            <ul class="hidden md:flex space-x-6 font-medium">
-              <li>
-                <a
-                  href="./index.html"
-                  class="hover:underline hover:decoration-blue-600 underline-offset-4"
-                  >Home</a
-                >
-              </li>
-              <li>
-                <a
-                  href="./about.html"
-                  class="hover:underline hover:decoration-blue-600 underline-offset-4"
-                  >About</a
-                >
-              </li>
-            </ul>
-          </nav>
+  <!-- Hero Section -->
+  <div class="absolute inset-0">
+    <video
+      autoplay
+      muted
+      loop
+      playsinline
+      class="w-full h-full object-cover z-0"
+    >
+      <source src="./media/about.mp4" type="video/mp4" />
+    </video>
+    <div class="absolute inset-0 bg-black/60 z-10"></div>
 
-          <div class="flex items-center space-x-6">
-            <button class="hover:text-[#0f1a75]">
-              <i class="ri-search-line"></i>
-            </button>
-            <button class="hover:text-[#0f1a75]">
-              <i class="ri-global-line"></i>
-            </button>
-            <button class="hover:text-[#0f1a75]">
-              <i class="ri-arrow-down-line"></i>
-            </button>
-          </div>
-        </div>
-      </header>
+    <!-- Hero Content -->
+    <div
+      class="absolute inset-0 flex flex-col items-start justify-center px-8 md:px-20 z-20 space-y-6 animate-fadeInUp"
+    >
+      <h1 class="text-white text-4xl md:text-6xl font-bold leading-tight">
+        About <span class="text-[#0f1a75]">Apexion</span>
+      </h1>
+      <p class="text-gray-200 text-lg md:text-xl max-w-3xl leading-relaxed">
+        At <span class="font-semibold text-white">Apexion</span>, we empower 
+        businesses with innovative <span class="text-[#0f1a75]">Software Development</span>, 
+        result-driven <span class="text-[#0f1a75]">Digital Marketing</span>, and 
+        visionary <span class="text-[#0f1a75]">Architectural Designing</span>.  
+        Our mission is simple: to redefine possibilities by blending technology, 
+        creativity, and strategy.
+      </p>
+      <p class="text-gray-300 text-base md:text-lg max-w-2xl">
+        We don’t just create solutions – we create experiences that inspire 
+        growth, transform industries, and shape the future.
+      </p>
+
+      <div class="flex space-x-4">
+        <button
+          class="bg-white text-black px-6 py-3 rounded-md font-medium hover:bg-gradient-to-r hover:from-[#0f1a75] hover:to-[#000000] transition hover:text-white"
+        >
+          Learn More
+        </button>
+        <button
+          class="border border-white text-white px-6 py-3 rounded-md font-medium hover:bg-[#0f1a75] transition"
+        >
+          Contact Us
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
     <!-- About -->
-
-    <section class="max-w-6xl mx-auto px-5 py-20 md:py-40 flex flex-col md:flex-row items-center gap-12">
-
+    <div
+      class="w-full bg-white text-black dark:bg-gray-900 text-grey60-0 dark:text-white"
+    >
+      <div
+        class="container mx-auto px-5 py-20 md:py-40 flex flex-col md:flex-row items-center gap-12"
+      >
         <div class="md:w-1/2 space-y-6">
-            <h2 class="text-3xl md:text-4xl font-bold leading-snug">
-                Shaping the Future with Technology and Responsibility
-            </h2>
-            <p class="text-gray-600 leading-relaxed">
-                At <span class="font-semibold text-[#0f1a75]">Apexion Information Technology</span>,
-                we believe true innovation goes hand in hand with responsibility.
-                Our goal is to deliver cutting-edge digital solutions while ensuring
-                each step contributes to a smarter, greener, and more inclusive future.
-                By adopting sustainable practices, we reduce environmental impact
-                and empower businesses and communities worldwide.
-                Together, we’re building a future that’s technologically advanced,
-                socially conscious, and environmentally responsible.
-            </p>
-            <button
-                class="bg-gradient-to-r from-[#0f1a75] to-black text-white px-6 py-3 rounded-md shadow hover:opacity-90 transition">
-                More Info
-            </button>
+          <h2 class="text-3xl md:text-4xl font-bold leading-snug">
+            Shaping the Future with Technology and Responsibility
+          </h2>
+          <p class="text-gray-800 dark:text-white leading-relaxed">
+            At
+            <span class="font-semibold text-[#0f1a75]"
+              >Apexion Information Technology</span
+            >, we believe true innovation goes hand in hand with responsibility.
+            Our goal is to deliver cutting-edge digital solutions while ensuring
+            each step contributes to a smarter, greener, and more inclusive
+            future. By adopting sustainable practices, we reduce environmental
+            impact and empower businesses and communities worldwide. Together,
+            we’re building a future that’s technologically advanced, socially
+            conscious, and environmentally responsible.
+          </p>
+          <button
+            class="bg-gradient-to-r from-[#0f1a75] to-black text-white px-6 py-3 rounded-md shadow hover:opacity-90 transition"
+          >
+            More Info
+          </button>
         </div>
 
         <div class="md:w-1/2 overflow-hidden rounded-xl shadow-lg">
-            <img src="./media/about.png" alt="About Apexion"
-                class="w-full h-[350px] object-cover transform hover:scale-125 transition duration-500 ease-in-out" />
+          <img
+            src="./media/about.png"
+            alt="About Apexion"
+            class="w-full h-[350px] object-cover transform hover:scale-125 transition duration-500 ease-in-out"
+          />
+        </div>
+      </div>
+    </div>
+
+
+       <!-- Timeline -->
+    <div class="w-full bg-white dark:bg-gray-900 px-6">
+      <h2 class="text-center text-4xl font-bold underline mb-8">Timeline</h2>
+      <div class="relative max-w-5xl mx-auto">
+        <div
+          class="absolute left-1/2 top-0 w-1 bg-gray-300 dark:bg-gray-700 h-full -translate-x-1/2"
+        ></div>
+
+        <!--  Item 1 -->
+        <div class="mb-16 flex items-center w-full">
+          <div class="w-1/2 text-right pr-10">
+            <p class="text-sm font-semibold italic">2023</p>
+            <h3 class="text-xl font-bold">Apexion Ltd. Comes to Life</h3>
+            <p class="mt-2 text-gray-600 dark:text-gray-300">
+              Apexion Ltd. was founded with a mission to blend advanced
+              technology and visionary architecture—creating environments that
+              are intelligent, future-focused, and sustainably designed.
+            </p>
+          </div>
+          <div class="relative">
+            <div
+              class="w-4 h-4 bg-black dark:bg-white rounded-full border-4 border-white dark:border-gray-900"
+            ></div>
+          </div>
+          <div class="w-1/2"></div>
         </div>
 
-    </section>
+        <!-- Item 2 -->
+        <div class="mb-16 flex items-center w-full">
+          <div class="w-1/2"></div>
+          <div class="relative">
+            <div
+              class="w-4 h-4 bg-black dark:bg-white rounded-full border-4 border-white dark:border-gray-900"
+            ></div>
+          </div>
+          <div class="w-1/2 pl-10">
+            <p class="text-sm font-semibold italic">2024</p>
+            <h3 class="text-xl font-bold">
+              Smart Architecture & Digital Integration Launch
+            </h3>
+            <p class="mt-2 text-gray-600 dark:text-gray-300">
+              We completed our first flagship project, combining architectural
+              innovation with digital solutions to deliver efficiency,
+              intelligent automation, and modern design excellence.
+            </p>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="mb-16 flex items-center w-full">
+          <div class="w-1/2 text-right pr-10">
+            <p class="text-sm font-semibold italic">2025</p>
+            <h3 class="text-xl font-bold">Scaling Sustainable Solutions</h3>
+            <p class="mt-2 text-gray-600 dark:text-gray-300">
+              Through strategic partnerships and expanding teams, we began
+              implementing eco-driven designs and digital products that empower
+              businesses and communities to evolve smarter and faster.
+            </p>
+          </div>
+          <div class="relative">
+            <div
+              class="w-4 h-4 bg-black dark:bg-white rounded-full border-4 border-white dark:border-gray-900"
+            ></div>
+          </div>
+          <div class="w-1/2"></div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="mb-16 flex items-center w-full">
+          <div class="w-1/2"></div>
+          <div class="relative">
+            <div
+              class="w-4 h-4 bg-black dark:bg-white rounded-full border-4 border-white dark:border-gray-900"
+            ></div>
+          </div>
+          <div class="w-1/2 pl-10">
+            <p class="text-sm font-semibold italic">2026</p>
+            <h3 class="text-xl font-bold">
+              Smart Cities & Future-Ready Environments
+            </h3>
+            <p class="mt-2 text-gray-600 dark:text-gray-300">
+              We introduced solutions focused on urban sustainability, smart
+              infrastructure, and inclusive design—paving the way for
+              intelligent, greener cities of tomorrow.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Footer -->
-
-    <footer class="bg-gray-100 text-gray-800 pt-16 pb-8">
+    <footer
+      class="bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-white pt-16 pb-8"
+    >
       <div
         class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10"
       >
@@ -176,7 +387,7 @@
 
           <div class="mt-6">
             <h4 class="font-semibold mb-2">Subscribe</h4>
-            <p class="text-sm text-gray-600 mb-3">
+            <p class="text-sm text-gray-600 dark:text-white mb-3">
               Stay updated on how technology and architecture are shaping the
               future.
             </p>
@@ -197,7 +408,7 @@
       </div>
 
       <div
-        class="max-w-7xl mx-auto px-6 mt-12 border-t border-gray-200 pt-6 flex flex-col md:flex-row items-center justify-between text-sm text-gray-500"
+        class="max-w-7xl mx-auto px-6 mt-12 border-t border-gray-200 dark:text-white pt-6 flex flex-col md:flex-row items-center justify-between text-sm text-gray-500"
       >
         <div class="flex space-x-6 mb-4 md:mb-0">
           <a href="#">Privacy Policy</a>
@@ -226,6 +437,11 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./script.js"></script>
-</body>
 
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+      };
+    </script>
+  </body>
 </html>

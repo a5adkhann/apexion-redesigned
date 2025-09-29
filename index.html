@@ -27,9 +27,14 @@
     />
   </head>
 
-  <body>
+  <body class="bg-white text-black dark:bg-gray-900 dark:text-white">
     <!-- Navbar + Hero Section  -->
-    <section class="text-white relative w-full h-screen overflow-hidden">
+    <div class="text-white relative w-full h-screen overflow-hidden">
+      <div
+        id="scroll-progress"
+        class="fixed top-0 left-0 h-[5px] w-0 bg-gradient-to-r from-[#0f1a75] to-[#FFFFFF] z-[9999]"
+      ></div>
+
       <header
         class="absolute top-0 left-0 w-full z-30 bg-transparent backdrop-blur-md border-b border-white/10"
       >
@@ -68,13 +73,23 @@
 
           <div class="flex items-center space-x-6">
             <button class="hover:text-[#0f1a75]">
-              <i class="ri-search-line"></i>
+              <a href="https://www.linkedin.com/company/apexionltd">
+              <i class="ri-linkedin-fill"></i>
+              </a>
             </button>
             <button class="hover:text-[#0f1a75]">
-              <i class="ri-global-line"></i>
+              <a href="https://www.facebook.com/apexionltd">
+              <i class="ri-facebook-fill"></i>
+              </a>
             </button>
             <button class="hover:text-[#0f1a75]">
-              <i class="ri-arrow-down-line"></i>
+              <a href="https://www.instagram.com/apexionagency">
+              <i class="ri-instagram-line"></i>
+              </a>
+            </button>
+
+            <button id="theme-toggle" class="hover:text-[#0f1a75]">
+              <i id="theme-icon" class="ri-moon-line"></i>
             </button>
           </div>
         </div>
@@ -126,7 +141,7 @@
           </video>
           <div class="absolute inset-0 bg-black/50 z-10"></div>
           <div
-            class="absolute inset-0 flex flex-col items-start justify-center px-8 md:px-20 z-20"
+            class="absolute font-bold inset-0 flex flex-col items-start justify-center px-8 md:px-20 z-20"
           >
             <h1 class="text-white text-5xl md:text-7xl mb-4">
               Redefining the <br />
@@ -138,7 +153,7 @@
             <button
               class="bg-white text-black px-6 py-3 rounded-md font-medium hover:bg-gradient-to-r hover:from-[#0f1a75] hover:to-[#000000] transition hover:text-white"
             >
-              REACT OUT
+              REACH OUT
             </button>
           </div>
         </div>
@@ -156,7 +171,7 @@
           </video>
           <div class="absolute inset-0 bg-black/50 z-10"></div>
           <div
-            class="absolute inset-0 flex flex-col items-start justify-center px-8 md:px-20 z-20"
+            class="absolute font-bold inset-0 flex flex-col items-start justify-center px-8 md:px-20 z-20"
           >
             <h1 class="text-5xl md:text-7xl mb-4">
               AI that redefines <br />
@@ -187,18 +202,18 @@
       >
         <i class="ri-arrow-right-s-line"></i>
       </button>
-    </section>
+    </div>
 
     <!-- About -->
 
-    <section
+    <div
       class="max-w-6xl mx-auto px-5 pt-20 flex flex-col md:flex-row items-center gap-12"
     >
       <div class="md:w-1/2 space-y-6">
         <h2 class="text-3xl md:text-4xl font-bold leading-snug">
           Building Tomorrow through Innovation and Integrity
         </h2>
-        <p class="text-gray-600 leading-relaxed">
+        <p class="text-gray-600 dark:text-white leading-relaxed">
           At
           <span class="font-semibold text-[#0f1a75]">Apexion Ltd.</span>, we
           believe innovation is strongest when it balances technology, design,
@@ -225,17 +240,19 @@
           class="w-full h-[350px] object-cover transform hover:scale-125 transition duration-500 ease-in-out"
         />
       </div>
-    </section>
+    </div>
 
     <!-- Our Services -->
-    <div class="relative bg-white text-black m-8">
+    <div class="relative bg-white text-black dark:bg-gray-900 text-white m-8">
       <div class="text-center mb-16">
         <h2
           class="text-4xl font-bold bg-gradient-to-r from-black via-pink-700 to-blue-500 bg-clip-text text-transparent"
         >
           Our Services
         </h2>
-        <p class="text-gray-600 mt-2">What We Bring to Fuel Your Growth</p>
+        <p class="text-gray-600 dark:text-white mt-2">
+          What We Bring to Fuel Your Growth
+        </p>
       </div>
 
       <div
@@ -256,7 +273,7 @@
         <div class="md:col-span-2 space-y-16">
           <div>
             <h3 class="text-2xl font-semibold">AI Innovation</h3>
-            <p class="text-gray-600 mt-2">
+            <p class="text-gray-600 dark:text-white mt-2">
               We harness the intelligence of AI to unlock new opportunities,
               reimagine processes, and deliver measurable outcomes. Our tailored
               AI consulting and solutions bridge technology with strategy,
@@ -266,7 +283,7 @@
 
           <div>
             <h3 class="text-2xl font-semibold">Data & Intelligence</h3>
-            <p class="text-gray-600 mt-2">
+            <p class="text-gray-600 dark:text-white mt-2">
               We transform raw data into actionable intelligence. By combining
               machine learning, advanced analytics, and generative AI, we
               empower enterprises to make informed decisions, optimize
@@ -276,7 +293,7 @@
 
           <div>
             <h3 class="text-2xl font-semibold">Digital Transformation</h3>
-            <p class="text-gray-600 mt-2">
+            <p class="text-gray-600 dark:text-white mt-2">
               Our digital-first approach modernizes critical systems and
               enhances user experiences. From design-led platforms to unified
               and personalized solutions, Apexion drives innovation that is both
@@ -286,7 +303,7 @@
 
           <div>
             <h3 class="text-2xl font-semibold">Cloud Architecture</h3>
-            <p class="text-gray-600 mt-2">
+            <p class="text-gray-600 dark:text-white mt-2">
               We enable organizations to scale seamlessly through secure,
               hybrid, or pure cloud ecosystems. With end-to-end expertise,
               Apexion designs cloud infrastructures that are resilient,
@@ -298,7 +315,6 @@
     </div>
 
     <!-- Features -->
-
     <div class="bg-gradient-to-r from-[#0f1a75] to-[#000000] py-20">
       <div class="text-center mb-12">
         <h2 class="text-3xl font-bold text-white">Featured Insights</h2>
@@ -313,11 +329,13 @@
         >
           <div class="absolute top-0 left-0 right-0 p-4 z-10 text-white">
             <h3 class="text-sm font-semibold uppercase">NEWSROOM</h3>
-            <p class="text-xs opacity-80">Lorem ipsum dolor sit amet.</p>
+            <p class="text-xs opacity-80">
+              Apexion strengthens its footprint in global technology solutions.
+            </p>
           </div>
           <img
             src="./media/cards1.jpg"
-            alt="Insight 1"
+            alt="Apexion News"
             class="w-full h-[500px] object-cover"
           />
           <div
@@ -327,8 +345,8 @@
               >Newsroom</span
             >
             <h3 class="text-lg font-semibold mt-2">
-              Systems Limited in partnership with Boston Health AI powers the
-              launch of Hami
+              Apexion Ltd partners with global enterprises to deliver AI-powered
+              architectural solutions.
             </h3>
           </div>
         </div>
@@ -338,23 +356,25 @@
           class="relative overflow-hidden shadow-lg group transform transition duration-500 hover:scale-105 hover:shadow-2xl"
         >
           <div class="absolute top-0 left-0 right-0 p-4 z-10 text-white">
-            <h3 class="text-sm font-semibold uppercase">NEWSROOM</h3>
-            <p class="text-xs opacity-80">Lorem ipsum dolor sit amet.</p>
+            <h3 class="text-sm font-semibold uppercase">CASE STUDY</h3>
+            <p class="text-xs opacity-80">
+              Revolutionizing smart spaces with integrated design & technology.
+            </p>
           </div>
           <img
             src="./media/cards2.jpg"
-            alt="Insight 1"
+            alt="Apexion Case Study"
             class="w-full h-[500px] object-cover"
           />
           <div
             class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-6 text-white"
           >
             <span class="text-xs uppercase tracking-wide opacity-80"
-              >Newsroom</span
+              >Case Study</span
             >
             <h3 class="text-lg font-semibold mt-2">
-              Systems Limited in partnership with Boston Health AI powers the
-              launch of Hami
+              How Apexion delivered a smart campus solution blending IoT with
+              sustainable architecture.
             </h3>
           </div>
         </div>
@@ -364,23 +384,25 @@
           class="relative overflow-hidden shadow-lg group transform transition duration-500 hover:scale-105 hover:shadow-2xl"
         >
           <div class="absolute top-0 left-0 right-0 p-4 z-10 text-white">
-            <h3 class="text-sm font-semibold uppercase">NEWSROOM</h3>
-            <p class="text-xs opacity-80">Lorem ipsum dolor sit amet.</p>
+            <h3 class="text-sm font-semibold uppercase">INSIGHT</h3>
+            <p class="text-xs opacity-80">
+              Exploring the future of digital infrastructure and smart cities.
+            </p>
           </div>
           <img
             src="./media/cards3.jpg"
-            alt="Insight 1"
+            alt="Apexion Insight"
             class="w-full h-[500px] object-cover"
           />
           <div
             class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-6 text-white"
           >
             <span class="text-xs uppercase tracking-wide opacity-80"
-              >Newsroom</span
+              >Insight</span
             >
             <h3 class="text-lg font-semibold mt-2">
-              Systems Limited in partnership with Boston Health AI powers the
-              launch of Hami
+              Apexion’s vision for connected cities: Merging architecture with
+              next-gen cloud technologies.
             </h3>
           </div>
         </div>
@@ -391,15 +413,15 @@
         >
           <div class="absolute top-0 left-0 right-0 p-4 z-10 text-white">
             <h3 class="text-sm font-semibold uppercase">NEWSROOM</h3>
-            <p class="text-xs opacity-80">Lorem ipsum dolor sit amet.</p>
+            <p class="text-xs opacity-80">
+              Apexion secures recognition for its innovation in design tech.
+            </p>
           </div>
-
           <img
             src="./media/cards4.jpg"
-            alt="Insight 1"
+            alt="Apexion Innovation"
             class="w-full h-[500px] object-cover"
           />
-
           <div
             class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-6 text-white"
           >
@@ -407,8 +429,8 @@
               >Newsroom</span
             >
             <h3 class="text-lg font-semibold mt-2">
-              Systems Limited in partnership with Boston Health AI powers the
-              launch of Hami
+              Awarded as a top innovator in architectural technology at the
+              Global Tech Summit 2025.
             </h3>
           </div>
         </div>
@@ -419,23 +441,24 @@
         >
           <div class="absolute top-0 left-0 right-0 p-4 z-10 text-white">
             <h3 class="text-sm font-semibold uppercase">CASE STUDY</h3>
-            <p class="text-xs opacity-80">Lorem ipsum dolor sit amet.</p>
+            <p class="text-xs opacity-80">
+              Delivering sustainable smart workplace ecosystems.
+            </p>
           </div>
           <img
             src="./media/cards5.jpg"
-            alt="Insight 1"
+            alt="Apexion Workplace"
             class="w-full h-[500px] object-cover"
           />
-
           <div
             class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-6 text-white"
           >
             <span class="text-xs uppercase tracking-wide opacity-80"
-              >Newsroom</span
+              >Case Study</span
             >
             <h3 class="text-lg font-semibold mt-2">
-              Systems Limited in partnership with Boston Health AI powers the
-              launch of Hami
+              Apexion transforms corporate HQ into a digitally connected,
+              green-certified workplace.
             </h3>
           </div>
         </div>
@@ -446,38 +469,40 @@
         >
           <div class="absolute top-0 left-0 right-0 p-4 z-10 text-white">
             <h3 class="text-sm font-semibold uppercase">BLOG</h3>
-            <p class="text-xs opacity-80">Lorem ipsum dolor sit amet.</p>
+            <p class="text-xs opacity-80">
+              Thought leadership from Apexion’s architects & engineers.
+            </p>
           </div>
           <img
             src="./media/cards6.jpg"
-            alt="Insight 1"
+            alt="Apexion Blog"
             class="w-full h-[500px] object-cover"
           />
           <div
             class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-6 text-white"
           >
-            <span class="text-xs uppercase tracking-wide opacity-80"
-              >Newsroom</span
-            >
+            <span class="text-xs uppercase tracking-wide opacity-80">Blog</span>
             <h3 class="text-lg font-semibold mt-2">
-              Systems Limited in partnership with Boston Health AI powers the
-              launch
+              Why the future of architecture is hybrid: Bridging design, AI, and
+              sustainable tech.
             </h3>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- comapny achievement -->
-    <div class="bg-white py-20">
+    <!-- company achievement -->
+    <div class="bg-white text-black dark:bg-gray-900 dark:text-white py-20">
       <div
         class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center"
       >
         <div>
-          <h2 class="text-4xl font-bold text-gray-900 leading-snug">
+          <h2
+            class="text-4xl font-bold text-gray-900 dark:text-white leading-snug"
+          >
             Future-Ready Technology, Real-World Impact
           </h2>
-          <p class="text-gray-600 mt-4">
+          <p class="text-gray-600 dark:text-white mt-4">
             Our approach empowers us to create exceptional experiences that fuel
             growth and lasting success for every stakeholder. Together, we rise
             to new heights by harnessing the full potential of digital
@@ -489,22 +514,28 @@
         </div>
         <div class="grid grid-cols-2 gap-8 text-center md:text-left">
           <div>
-            <p class="text-3xl font-bold text-gray-900">25+</p>
-            <p class="text-gray-600">Projects delivered with precision</p>
+            <p class="text-3xl font-bold text-gray-900 dark:text-white">25+</p>
+            <p class="text-gray-600 dark:text-white">
+              Projects delivered with precision
+            </p>
           </div>
           <div>
-            <p class="text-3xl font-bold text-gray-900">20+</p>
-            <p class="text-gray-600">Experts & innovators driving change</p>
+            <p class="text-3xl font-bold text-gray-900 dark:text-white">20+</p>
+            <p class="text-gray-600 dark:text-white">
+              Experts & innovators driving change
+            </p>
           </div>
           <div>
-            <p class="text-3xl font-bold text-gray-900">5+</p>
-            <p class="text-gray-600">
+            <p class="text-3xl font-bold text-gray-900 dark:text-white">5+</p>
+            <p class="text-gray-600 dark:text-white">
               Industries we’re shaping with technology & design
             </p>
           </div>
           <div>
-            <p class="text-3xl font-bold text-gray-900">30+</p>
-            <p class="text-gray-600">Clients growing with Apexion</p>
+            <p class="text-3xl font-bold text-gray-900 dark:text-white">30+</p>
+            <p class="text-gray-600 dark:text-white">
+              Clients growing with Apexion
+            </p>
           </div>
         </div>
       </div>
@@ -597,13 +628,17 @@
     </div>
 
     <!-- How we can help -->
-    <div class="bg-white py-20 text-center">
+    <div
+      class="bg-white text-black dark:bg-gray-900 dark:text-white py-20 text-center"
+    >
       <div class="max-w-3xl mx-auto px-6">
-        <h2 class="text-4xl md:text-5xl font-bold text-gray-900">
+        <h2
+          class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white"
+        >
           How can we help you?
         </h2>
 
-        <p class="mt-4 text-lg text-gray-600">
+        <p class="mt-4 text-lg text-gray-600 dark:text-white">
           Ready to break limits and shape the future of innovation?
         </p>
 
@@ -620,7 +655,9 @@
 
     <!-- Footer -->
 
-    <footer class="bg-gray-100 text-gray-800 pt-16 pb-8">
+    <footer
+      class="bg-gray-100 text-gray-800 pt-16 dark:bg-gray-900 dark:text-white pb-8"
+    >
       <div
         class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10"
       >
@@ -692,7 +729,7 @@
 
           <div class="mt-6">
             <h4 class="font-semibold mb-2">Subscribe</h4>
-            <p class="text-sm text-gray-600 mb-3">
+            <p class="text-sm text-gray-600 dark:text-white mb-3">
               Stay updated on how technology and architecture are shaping the
               future.
             </p>
@@ -713,7 +750,7 @@
       </div>
 
       <div
-        class="max-w-7xl mx-auto px-6 mt-12 border-t border-gray-200 pt-6 flex flex-col md:flex-row items-center justify-between text-sm text-gray-500"
+        class="max-w-7xl mx-auto px-6 mt-12 border-t border-gray-200 pt-6 flex flex-col md:flex-row items-center justify-between text-sm text-gray-500 dark:text-white"
       >
         <div class="flex space-x-6 mb-4 md:mb-0">
           <a href="#">Privacy Policy</a>
@@ -742,5 +779,11 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./script.js"></script>
+
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+      };
+    </script>
   </body>
 </html>
