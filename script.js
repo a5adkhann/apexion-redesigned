@@ -1,6 +1,37 @@
 // console.log("Apexion")
-// SideBar toogle show
 
+ window.addEventListener("scroll", () => {
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const scrollTop = window.scrollY;
+    const progress = (scrollTop / docHeight) * 100;
+    document.getElementById("scroll-progress").style.width = progress + "%";
+  });
+
+  const themeToggle = document.getElementById("theme-toggle");
+  const themeIcon = document.getElementById("theme-icon");
+  const html = document.documentElement;
+
+  // dark/light theme
+  if (localStorage.getItem("theme") === "dark") {
+    html.classList.add("dark");
+    themeIcon.classList.remove("ri-moon-line");
+    themeIcon.classList.add("ri-sun-line");
+  }
+
+  themeToggle.addEventListener("click", () => {
+    html.classList.toggle("dark");
+    if (html.classList.contains("dark")) {
+      themeIcon.classList.remove("ri-moon-line");
+      themeIcon.classList.add("ri-sun-line");
+      localStorage.setItem("theme", "dark");
+    } else {
+      themeIcon.classList.remove("ri-sun-line");
+      themeIcon.classList.add("ri-moon-line");
+      localStorage.setItem("theme", "light");
+    }
+  });
+
+// SideBar toogle show
 const menuBtn = document.getElementById("menu-btn");
 const closeBtn = document.getElementById("close-btn");
 const sidebar = document.getElementById("sidebar");
