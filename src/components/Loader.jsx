@@ -15,7 +15,7 @@ const Loader = () => {
     <AnimatePresence>
       {isLoading && (
         <motion.div
-          className="fixed inset-0 z-50 flex flex-col items-center justify-center text-white backdrop-blur-3xl"
+          className="fixed inset-0 z-50 flex flex-col   bg-gradient-to-l from-[var(--blue)] to-[var(--black)] items-center justify-center text-white backdrop-blur-md"
           initial={{ y: 0, opacity: 1 }}
           animate={{ y: 0, opacity: 1 }}
           exit={{
@@ -27,13 +27,13 @@ const Loader = () => {
           
           }}
         >
-          <img src="white-logo.png" alt="logo" />
+          <img src="logo.png" alt="logo" />
 
           <div className="flex space-x-2 mt-6">
             {[0, 1, 2].map((dot) => (
               <motion.span
                 key={dot}
-                className="w-3 h-3 bg-[#00ffcc] rounded-full"
+                className="w-3 h-3 bg-[var(--light)] rounded-full"
                 animate={{ opacity: [0.3, 1, 0.3] }}
                 transition={{
                   duration: 1,
@@ -45,7 +45,7 @@ const Loader = () => {
           </div>
 
           <motion.p
-            className="text-sm mt-5 text-black tracking-widest uppercase"
+            className="text-sm mt-5 text-white tracking-widest uppercase"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1.5 }}

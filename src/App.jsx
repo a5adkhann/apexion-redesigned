@@ -17,7 +17,7 @@ const App = () => {
 
   useEffect(() => {
       const titles = [
-        "Wellnex - Empowering Wellness",
+        "Apexion Agency",
         "1 new message",
       ];
 

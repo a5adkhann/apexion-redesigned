@@ -105,7 +105,7 @@ const Navbar = ({ activePage }) => {
         </motion.div>
 
         <div className="hidden md:flex items-center space-x-10">
-          {["Home", "Apps", "About", "Contact"].map((name) => (
+          {["Home", "About", "Contact"].map((name) => (
             <Link
               key={name}
               to={`/${name === "Home" ? "" : name.toLowerCase()}`}
