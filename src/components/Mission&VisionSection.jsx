@@ -31,9 +31,9 @@ const MissionAndVisionSection = () => {
             <motion.div
               whileHover={{ y: -5 }}
               className="rounded-2xl p-6 sm:p-8 md:p-10 
-              shadow-[0_4px_25px_rgba(0,255,100,0.15)] backdrop-blur-md border border-white/10"
+              shadow-[0_4px_25px_var(--blue)] backdrop-blur-md border border-white/10"
             >
-              <FaHeart className="text-[#34C759] text-4xl sm:text-5xl mb-4" />
+              <FaHeart className="text-[var(--light)] text-4xl sm:text-5xl mb-4" />
               <h2 className="text-2xl sm:text-3xl font-semibold mb-3">
                 Our Mission
               </h2>
@@ -57,9 +57,9 @@ const MissionAndVisionSection = () => {
             <motion.div
               whileHover={{ y: -5 }}
               className="rounded-2xl p-6 sm:p-8 md:p-10 
-              shadow-[0_4px_25px_rgba(0,255,100,0.15)] backdrop-blur-md border border-white/10"
+              shadow-[0_4px_25px_var(--blue)] backdrop-blur-md border border-white/10"
             >
-              <FaBrain className="text-[#34C759] text-4xl sm:text-5xl mb-4" />
+              <FaBrain className="text-[var(--light)] text-4xl sm:text-5xl mb-4" />
               <h2 className="text-2xl sm:text-3xl font-semibold mb-3">
                 Our Vision
               </h2>

@@ -7,7 +7,7 @@ const OurJourneySection = () => {
     <section
       className="relative bg-[#111827] py-16 sm:py-20 md:py-24 px-4 sm:px-8 md:px-16 lg:px-24 overflow-hidden"
       style={{
-        backgroundImage: `linear-gradient(rgba(0, 60, 0, 0.15), rgba(0, 0, 0, 0.85)), url('line-vector.svg')`,
+        backgroundImage: `linear-gradient(rgba(15, 26, 117, 0.7), rgba(0, 0, 0, 0.9)), url('line-vector.svg')`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
@@ -31,8 +31,8 @@ const OurJourneySection = () => {
           transition={{ duration: 0.6 }}
         >
           <div className="flex flex-col md:flex-row items-center justify-start gap-3 mb-6">
-          <div className="w-12 h-[2px] bg-[#34C759]" />
-          <h2 className="text-3xl sm:text-4xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#34C759] to-[#FFF]">
+          <div className="w-12 h-[2px] bg-[var(--light)]" />
+          <h2 className="text-3xl sm:text-4xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[var(--blue)] to-[#FFF]">
             Our Journey
           </h2>
         </div>

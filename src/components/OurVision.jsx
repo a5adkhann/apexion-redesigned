@@ -37,7 +37,7 @@ const OurVision = () => {
   bg-cover 
   bg-center  "
       style={{
-        backgroundImage: `linear-gradient(rgba(0, 60, 0, 0.15), rgba(0, 0, 0, 0.85)), url('line-vector.svg')`,
+        backgroundImage: `linear-gradient(rgba(15, 26, 117, 0.7), rgba(0, 0, 0, 0.9)), url('line-vector.svg')`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
