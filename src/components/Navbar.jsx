@@ -143,7 +143,7 @@ const Navbar = ({ activePage }) => {
             className="md:hidden absolute top-full left-0 w-full bg-black/50 backdrop-blur-lg border-t border-b border-green-900 z-10"
           >
             <div className="px-4 py-4 space-y-4">
-              {["Home", "Apps", "About", "Contact"].map((name) => (
+              {["Home", "About", "Contact"].map((name) => (
                 <Link
                   key={name}
                   to={`/${name === "Home" ? "" : name.toLowerCase()}`}

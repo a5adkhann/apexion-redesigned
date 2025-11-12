@@ -10,16 +10,17 @@ const Heroo = () => {
   return (
     <section className="relative min-h-screen text-white overflow-hidden">
       <div className="absolute inset-0 w-full h-full overflow-hidden">
-        
+        {/* Background Video */}
         <video
           className="absolute inset-0 w-full h-full object-cover"
-          src="hero.mp4"
+          src="hero.mp4" // replace with your actual video path
           autoPlay
           loop
           muted
           playsInline
         />
 
+        {/* Gradient Overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-[rgba(0,60,0,0.1)] to-[rgba(0,0,0,0.9)] mix-blend-multiply"></div>
       </div>
 
@@ -36,11 +37,17 @@ const Heroo = () => {
               transition={{ duration: 0.6 }}
             >
               <TypeAnimation
-                sequence={['Wellness.', 1000, 'Technology.', 1000, 'Community.', 1000]}
+                sequence={[
+                  'Innovation Meets Design.', 1000,
+                  'Shaping Future-Ready Spaces.', 1000,
+                  'Technology with Purpose.', 1000,
+                  'Smart, Sustainable Solutions.', 1000
+                ]}
                 wrapper="span"
                 repeat={Infinity}
                 speed={45}
               />
+
             </motion.div>
 
             <motion.p
@@ -49,9 +56,8 @@ const Heroo = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
             >
-              A unified digital ecosystem empowering individuals, gyms, and
-              wellness providers through cutting-edge HealthTech and fitness
-              innovation. Our mission: to merge wellness with what’s next.
+              "Apexion Web – Redefining the digital frontier. We harness cutting-edge AI and innovative solutions to drive growth, transform businesses,
+              and shape the future of the web. Your vision, powered by intelligence, crafted for tomorrow."
             </motion.p>
 
             <motion.div
