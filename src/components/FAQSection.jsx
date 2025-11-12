@@ -4,48 +4,39 @@ import { Plus, Minus } from "lucide-react";
 
 const faqs = [
   {
-    question: "What is Wellnex Systems?",
+    question: "What is Apexion?",
     answer:
-      "Wellnex Systems is a next-generation HealthTech ecosystem that unites wellness, fitness, and technology. We create digital solutions that empower individuals, gyms, and wellness providers to thrive in a connected, intelligent, and human-centered environment.",
+      "Apexion is a next-generation architectural technology agency. We redefine innovation through intelligent architecture, AI-driven design, and sustainable digital transformation, delivering solutions that are future-ready and impactful.",
   },
   {
-    question:
-      "How does Wellnex Systems integrate wellness, fitness, and technology?",
+    question: "What services does Apexion offer?",
     answer:
-      "Wellnex integrates physical, mental, and emotional wellness through a suite of intelligent apps. From telehealth and diagnostics to fitness access and mindfulness, our platform uses AI, cloud infrastructure, and real-time data to deliver personalized wellness experiences.",
+      "We provide a range of services including AI-assisted architectural design, smart building solutions, sustainable planning, digital transformation consulting, and technology integration for enterprises.",
   },
   {
-    question:
-      "Who can use Wellnex Systems — individuals, gyms, or healthcare providers?",
+    question: "How does Apexion use AI in architecture?",
     answer:
-      "Wellnex is built for everyone in the wellness ecosystem — individuals seeking better health, gyms wanting smarter operations, and healthcare providers offering personalized care. Each user group benefits from tools tailored to their unique needs within one connected platform.",
+      "Our AI-driven design tools analyze data, optimize building performance, and generate innovative design options. This allows us to create smarter, sustainable, and highly efficient architectural solutions.",
   },
   {
-    question:
-      "Is Wellnex Systems available globally or only in select regions?",
+    question: "Who can benefit from Apexion’s services?",
     answer:
-      "Currently, Wellnex is launching across select regions with a focus on the UAE and South Asia, but we’re expanding globally soon. Our apps and services are designed to be scalable and accessible worldwide.",
+      "Our services cater to architects, developers, corporate clients, and governments looking to leverage technology and innovation for smarter, sustainable, and future-ready building solutions.",
   },
   {
-    question: "How does Wellnex protect my personal health and fitness data?",
+    question: "Is Apexion focused on sustainability?",
     answer:
-      "We take data security seriously. Wellnex uses end-to-end encryption, secure cloud infrastructure, and strict compliance with global privacy standards to ensure your health and fitness data stays private and protected at all times.",
+      "Absolutely. Sustainability is at the core of our design philosophy. We integrate energy-efficient solutions, eco-friendly materials, and data-driven planning to reduce environmental impact.",
   },
   {
-    question:
-      "What makes Wellnex different from other fitness and wellness apps?",
+    question: "How can I collaborate with Apexion?",
     answer:
-      "Unlike traditional wellness apps, Wellnex connects every aspect of well-being—physical, mental, and emotional—into a single intelligent ecosystem. Our AI-driven personalization, seamless integration for providers, and future-ready technology set us apart.",
+      "You can collaborate with us by reaching out through our website. We offer tailored solutions for projects of all sizes, helping clients achieve innovative and efficient architectural outcomes.",
   },
   {
-    question: "How can I join the Wellnex movement?",
+    question: "Does Apexion provide global services?",
     answer:
-      "You can join the Wellnex movement by exploring our flagship apps—SoulWhispers and GymKey—or by signing up for early access to the unified Wellnex Platform. Visit our website or click 'Join the Movement' to get started.",
-  },
-  {
-    question: "Does Wellnex offer corporate or enterprise wellness solutions?",
-    answer:
-      "Yes, Wellnex provides scalable wellness solutions for organizations and fitness providers. From corporate wellness dashboards to multi-branch gym management tools, our platform supports businesses aiming to improve employee well-being and operational efficiency.",
+      "Yes, Apexion works with clients worldwide. Our approach is scalable and adaptable, combining global architectural trends with cutting-edge technology to deliver impactful solutions.",
   },
 ];
 
@@ -53,49 +44,52 @@ const FAQSection = () => {
   const [openIndex, setOpenIndex] = useState(null);
 
   return (
-    <section 
-    className="bg-black text-white py-20 px-6 sm:px-10 md:px-20 relative"
-    style={{
-          backgroundImage: `linear-gradient(rgba(0, 60, 0, 0.15), rgba(0, 0, 0, 0.85)), url('line-vector.svg')`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
+    <section
+      className="bg-[#000000] text-white py-20 px-6 sm:px-10 md:px-20 relative font-[Poppins]"
+      style={{
+        backgroundImage: `linear-gradient(rgba(15, 26, 117, 0.75), rgba(0, 0, 0, 0.95)), url('line-vector.svg')`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
     >
+     
       <div className="flex gap-2 items-center mb-20">
-        <img src="./movingIcon.gif" width={20} />
-        <p className="text-xs">FAQ’s</p>
+        <img src="./movingIcon.gif" width={22} alt="Moving Icon" />
+        <p className="text-xs tracking-wide text-[#ffffff]/80">FAQ’s</p>
       </div>
 
+     
       <div className="grid place-items-start md:grid-cols-2 grid-cols-1 gap-20">
+        
         <div>
           <motion.h1
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-4xl sm:text-5xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#34C759] to-[#f8faf9] mb-4 sm:mb-5"
+            className="text-4xl sm:text-5xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#0f1a75] to-[#ffffff] mb-5"
           >
-            Redefining the Future of Health and <br /> Fitness.
+            Redefining Innovation Through Intelligent Design
           </motion.h1>
 
-          <p className="text-sm">
-            At Wellnex Systems, we merge wellness with intelligence—engineering
-            digital ecosystems that empower lives. From AI-powered diagnostics
-            and personalized mindfulness to smart gym connectivity and
-            data-driven wellness insights, we’re building technology that
-            listens, learns, and evolves with you. Our mission is simple: to
-            create human-centered HealthTech solutions that make well-being
-            accessible, intelligent, and deeply personal.
+          <p className="text-sm text-gray-300 leading-relaxed max-w-lg">
+            At Apexion, we merge architecture with technology to create
+            sustainable, intelligent, and future-ready solutions. Our mission
+            is to empower clients with innovative designs, AI-driven insights,
+            and seamless digital transformation strategies.
           </p>
         </div>
-        <div className="relative max-w-4xl mx-auto h-[500px] scrollbar-thin scrollbar-thumb-[#34C759] scrollbar-track-[#0f0f0f] overflow-y-auto overflow-x-hidden">
-          <h2 className="text-3xl font-semibold mb-10 text-center">
+
+
+        <div className="relative max-w-4xl mx-auto h-[500px] scrollbar-thin scrollbar-thumb-[#0f1a75] scrollbar-track-[#1a1a1a] overflow-y-auto overflow-x-hidden">
+          <h2 className="text-3xl font-semibold mb-10 text-center text-[var(--light)]">
             Frequently Asked Questions
           </h2>
+
           <div className="space-y-4">
             {faqs.map((faq, index) => (
               <div
                 key={index}
-                className="border border-gray-800 rounded-2xl overflow-hidden bg-[#0a0a0a]/60 backdrop-blur-sm"
+                className="rounded-2xl overflow-hidden bg-white/5 backdrop-blur-md shadow-md hover:shadow-[#0f1a75]/40 transition-all duration-300"
               >
                 <button
                   className="flex justify-between items-center w-full px-6 py-5 text-left text-lg font-medium"
@@ -103,11 +97,11 @@ const FAQSection = () => {
                     setOpenIndex(openIndex === index ? null : index)
                   }
                 >
-                  <span className="text-sm">{faq.question}</span>
+                  <span className="text-sm text-[#ffffff]/90">{faq.question}</span>
                   {openIndex === index ? (
-                    <Minus className="w-5 h-5 text-[#34C759]" />
+                    <Minus className="w-5 h-5 text-[var(--light)]" />
                   ) : (
-                    <Plus className="w-5 h-5 text-[#34C759]" />
+                    <Plus className="w-5 h-5 text-[var(--light)]" />
                   )}
                 </button>
 
@@ -119,7 +113,7 @@ const FAQSection = () => {
                       exit={{ height: 0, opacity: 0 }}
                       transition={{ duration: 0.3 }}
                     >
-                      <div className="px-6 pb-5 text-sm text-gray-400 leading-relaxed">
+                      <div className="px-6 pb-5 text-sm text-gray-300 leading-relaxed">
                         {faq.answer}
                       </div>
                     </motion.div>

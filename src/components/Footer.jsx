@@ -16,7 +16,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-10">
 
         <div>
-          <img src="white-logo.png" alt="Wellnex Logo" className="w-36 mb-4" />
+          <img src="logo.png" alt="Wellnex Logo" className="w-36 mb-4" />
           <p className="text-gray-400 leading-relaxed font-inter text-sm">
             Empowering wellness through{" "}
             <span className="text-[#34C759] font-medium">AI</span> and innovation —  

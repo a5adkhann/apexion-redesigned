@@ -10,20 +10,19 @@ const Heroo = () => {
   return (
     <section className="relative min-h-screen text-white overflow-hidden">
       <div className="absolute inset-0 w-full h-full overflow-hidden">
-        <div
-          className="absolute inset-0 bg-center bg-cover"
-          style={{
-            backgroundImage: `
-        url('hero.jpg')
-      `,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
-          }}
-        ></div>
+        
+        <video
+          className="absolute inset-0 w-full h-full object-cover"
+          src="hero.mp4"
+          autoPlay
+          loop
+          muted
+          playsInline
+        />
 
         <div className="absolute inset-0 bg-gradient-to-b from-[rgba(0,60,0,0.1)] to-[rgba(0,0,0,0.9)] mix-blend-multiply"></div>
       </div>
+
 
 
 

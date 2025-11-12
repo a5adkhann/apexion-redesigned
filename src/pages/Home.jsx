@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 import Heroo from "../components/Heroo";
-import WhyWellnex from "../components/WhyWellnex";
 import OurVision from "../components/OurVision";
-import FlagshipApps from "../components/FlagshipApps";
 import FutureVision from "../components/FutureVision";
 import Testimonials from "../components/Testinomials";
 
@@ -11,6 +9,7 @@ import ProgressBar from "../components/ProgressBar";
 import Loader from "../components/Loader";
 import FAQSection from "../components/FAQSection";
 import ScrollStackSection from "../components/ScrollStackSection";
+import WhyApexion from "../components/WhyApexion";
 
 const Home = () => {
   const [loading, setLoading] = useState(true);
@@ -36,7 +35,7 @@ const Home = () => {
 
       <div style={{ position: "relative", minHeight: "100vh" }}>
         <div style={{ position: "sticky", top: 0, zIndex: 10 }}>
-          <WhyWellnex />
+          <WhyApexion />
         </div>
 
         <div style={{ position: "relative", marginTop: "-1vh", zIndex: 20 }}>
@@ -44,7 +43,6 @@ const Home = () => {
         </div>
       </div>
 
-      <FlagshipApps />
       <FAQSection/>
       <FutureVision />
       <Testimonials />
