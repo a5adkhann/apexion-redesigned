@@ -44,13 +44,13 @@ const Pill = () => {
     <div
       ref={pillRef}
       className="
-        fixed top-0 left-0 z-[9999] pointer-events-none
-        w-[14px] h-[14px] rounded-full opacity-90
-        border-green-600 border
-    shadow-[0_0_50px_#00aa00,0_0_10px_#00aa00]
-        transition-all duration-150 ease-[cubic-bezier(.2,.9,.3,1)]
-        will-change-transform
-      "
+    fixed top-0 left-0 z-[9999] pointer-events-none
+    w-[14px] h-[14px] rounded-full opacity-90
+    border-[var(--blue)] border
+    shadow-[0_0_50px_var(--blue),0_0_10px_var(--blue)]
+    transition-all duration-150 ease-[cubic-bezier(.2,.9,.3,1)]
+    will-change-transform
+  "
       aria-hidden="true"
     ></div>
   );

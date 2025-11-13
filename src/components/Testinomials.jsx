@@ -56,7 +56,7 @@ const Testimonials = () => {
         >
           <div className="flex items-center gap-4 mb-2">
             <div className="w-12 h-[2px] bg-[#0f1a75]" />
-            <h2 className="text-4xl md:text-5xl font-bold font-poppins bg-clip-text text-transparent bg-gradient-to-r from-[#0f1a75] to-[#5a6df5]">
+            <h2 className="text-4xl md:text-5xl font-bold font-poppins bg-clip-text text-transparent bg-gradient-to-r from-[#0f1a75] to-[var(--light)]">
               What People Are Saying
             </h2>
           </div>

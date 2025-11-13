@@ -74,7 +74,7 @@ const OurVision = () => {
           >
             <div className="flex items-center gap-3 sm:gap-4 mb-4 justify-center lg:justify-start">
               <div className="w-10 sm:w-12 h-[2px] bg-[#0f1a75]" />
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#0f1a75] to-[#5a6df5]">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#0f1a75] to-[var(--light)]">
                 Our Vision
               </h2>
             </div>
