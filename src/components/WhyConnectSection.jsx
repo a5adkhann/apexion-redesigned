@@ -1,30 +1,26 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Tilt from "react-parallax-tilt";
-import {
-  Ribbon,
-  Rocket,
-  ShieldCheck,
-} from "lucide-react"; 
+import { Ribbon, Rocket, ShieldCheck } from "lucide-react"; 
 
 const WhyConnectSection = () => {
   const cards = [
     {
       icon: <Ribbon className="text-[#34C759] w-10 h-10 mb-4 mx-auto" />,
-      title: "Strategic Guidance",
-      desc: "We don’t just build — we help you define goals, analyze your audience, and create actionable roadmaps that drive real growth.",
+      title: "Innovative Design",
+      desc: "We craft cutting-edge digital architectures and solutions tailored to optimize your business workflows and technology landscape.",
       glow: "hover:shadow-[0_0_25px_#34C759aa]",
     },
     {
       icon: <Rocket className="text-[#00C2FF] w-10 h-10 mb-4 mx-auto" />,
-      title: "End-to-End Solutions",
-      desc: "From concept to launch, we handle design, development, and optimization — ensuring every detail aligns with your mission.",
+      title: "Seamless Integration",
+      desc: "Our solutions integrate smoothly with your existing systems, ensuring efficiency, scalability, and long-term performance.",
       glow: "hover:shadow-[0_0_25px_#00C2FFaa]",
     },
     {
       icon: <ShieldCheck className="text-[#FF6B6B] w-10 h-10 mb-4 mx-auto" />,
       title: "Trusted Expertise",
-      desc: "Our team has worked with startups, enterprises, and global brands — delivering reliability, innovation, and lasting partnerships.",
+      desc: "With years of experience in IT architecture, our team delivers reliable, secure, and innovative solutions for enterprises and startups alike.",
       glow: "hover:shadow-[0_0_25px_#FF6B6Baa]",
     },
   ];
@@ -42,14 +38,14 @@ const WhyConnectSection = () => {
 
       <div className="relative z-10 text-center mb-12">
         <div className="flex items-center justify-center gap-3 mb-3">
-          <div className="w-12 h-[2px] bg-[#34C759]" />
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#34C759] to-[#FFFFFF]">
-            Why Connect With Us?
+          <div className="w-12 h-[2px] bg-[var(--blue)]" />
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[var(--blue)] to-[var(--light)]">
+            Why Partner With Apexion?
           </h2>
-          <div className="w-12 h-[2px] bg-[#34C759]" />
+          <div className="w-12 h-[2px] bg-[var(--blue)]" />
         </div>
         <p className="text-gray-300 max-w-2xl mx-auto text-sm sm:text-base">
-          Discover the Wellnex difference — where innovation meets integrity and every connection empowers your well-being journey.
+          Apexion transforms ideas into robust IT architectures — blending innovation, reliability, and strategic insight to accelerate your business.
         </p>
       </div>
 

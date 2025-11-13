@@ -11,7 +11,7 @@ const formSchema = z.object({
   phone: z.string().optional(),
   company: z.string().optional(),
   nda: z.boolean().optional(),
-  message: z.string().min(10, "Please provide a bit more detail"),
+  message: z.string().min(10, "Please provide more details"),
 });
 
 const ContactFormSection = () => {
@@ -29,118 +29,115 @@ const ContactFormSection = () => {
   };
 
   return (
-    <>
-      <div className="bg-gradient-to-b from-[#0b0d13] via-[#111827] to-[#0b0d13] border-t-2 border-l-2  border-gray-600 flex justify-center items-center p-10 md:p-20"
+    <div className="bg-gradient-to-b from-[#0b0d13] via-[#111827] to-[#0b0d13] border-t-2 border-l-2 border-gray-600 flex justify-center items-center p-10 md:p-20">
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        className="w-full max-w-3xl p-8 md:p-12"
       >
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="  w-full max-w-3xl p-8 md:p-12"
+        <div className="flex flex-col items-center justify-center gap-3 mb-6 text-center">
+          <div className="w-12 h-[2px] bg-[#0f1a75]" />
+          <h2 className="text-3xl sm:text-4xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#0f1a75] to-[#FFF]">
+            Let’s Build Something Remarkable
+          </h2>
+          <p className="text-white font-semibold">Partner with Apexion</p>
+        </div>
+
+        <form
+          onSubmit={handleSubmit(onSubmit)}
+          className="space-y-6 text-white"
         >
-          <div className="flex flex-col md:flex-col items-center justify-center gap-3 mb-6">
-            <div className="w-12 h-[2px] bg-[#34C759]" />
-            <h2 className="text-3xl sm:text-4xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#34C759] to-[#FFF]">
-              Get In. Get Fit.
-            </h2>
-            <p className="text-white font-bold">JOIN THE TRIBE</p>
+          <div>
+            <input
+              {...register("challenge")}
+              type="text"
+              placeholder="Describe your IT challenge or goal*"
+              className="w-full px-4 py-3 border border-gray-800 bg-transparent focus:ring-1 focus:ring-[#0f1a75] outline-none"
+            />
+            {errors.challenge && (
+              <p className="text-red-500 text-sm mt-1">{errors.challenge.message}</p>
+            )}
           </div>
 
-          <form
-            onSubmit={handleSubmit(onSubmit)}
-            className="space-y-6 text-white"
-          >
+          <div className="grid md:grid-cols-2 gap-6">
             <div>
               <input
-                {...register("challenge")}
+                {...register("name")}
                 type="text"
-                placeholder="Your challenge / goal*"
-                className="w-full px-4 py-3 border border-gray-800 bg-transparent focus:ring-1 focus:ring-[#34C759] outline-none"
+                placeholder="Your Name*"
+                className="w-full px-4 py-3 border border-gray-800 bg-transparent focus:ring-1 focus:ring-[#0f1a75] outline-none"
               />
-              {errors.challenge && (
-                <p className="text-red-500 text-sm mt-1">{errors.challenge.message}</p>
+              {errors.name && (
+                <p className="text-red-500 text-sm mt-1">{errors.name.message}</p>
               )}
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-6">
-              <div>
-                <input
-                  {...register("name")}
-                  type="text"
-                  placeholder="Name*"
-                  className="w-full px-4 py-3 border border-gray-800 bg-transparent focus:ring-1 focus:ring-[#34C759] outline-none"
-                />
-                {errors.name && (
-                  <p className="text-red-500 text-sm mt-1">{errors.name.message}</p>
-                )}
-              </div>
-
-              <div>
-                <input
-                  {...register("email")}
-                  type="email"
-                  placeholder="Corporate email*"
-                  className="w-full px-4 py-3 border border-gray-800 bg-transparent focus:ring-1 focus:ring-[#34C759] outline-none"
-                />
-                {errors.email && (
-                  <p className="text-red-500 text-sm mt-1">{errors.email.message}</p>
-                )}
-              </div>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-6">
-              <div>
-                <input
-                  {...register("phone")}
-                  type="text"
-                  placeholder="Phone number"
-                  className="w-full px-4 py-3 border border-gray-800 bg-transparent focus:ring-1 focus:ring-[#34C759] outline-none"
-                />
-              </div>
-
-              <div>
-                <input
-                  {...register("company")}
-                  type="text"
-                  placeholder="Company"
-                  className="w-full px-4 py-3 border border-gray-800 bg-transparent focus:ring-1 focus:ring-[#34C759] outline-none"
-                />
-              </div>
-            </div>
-
-            <div className="flex items-center gap-3 text-sm">
-              <input
-                type="checkbox"
-                {...register("nda")}
-                className="accent-[#34C759]"
-              />
-              <span>Secure data with NDA first</span>
             </div>
 
             <div>
-              <textarea
-                {...register("message")}
-                placeholder="Your Message"
-                rows="5"
-                className="w-full px-4 py-3 border border-gray-800 bg-transparent focus:ring-1 focus:ring-[#34C759] outline-none resize-none"
-              ></textarea>
-              {errors.message && (
-                <p className="text-red-500 text-sm mt-1">{errors.message.message}</p>
+              <input
+                {...register("email")}
+                type="email"
+                placeholder="Corporate Email*"
+                className="w-full px-4 py-3 border border-gray-800 bg-transparent focus:ring-1 focus:ring-[#0f1a75] outline-none"
+              />
+              {errors.email && (
+                <p className="text-red-500 text-sm mt-1">{errors.email.message}</p>
               )}
             </div>
+          </div>
 
-            <motion.button
-              type="submit"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="w-full bg-gradient-to-l from-green-600 to-green-950 text-white py-3 rounded-full font-semibold text-sm transition-all duration-300 shadow-md"
-            >
-              Send Message
-            </motion.button>
-          </form>
-        </motion.div>
-      </div>
-    </>
+          <div className="grid md:grid-cols-2 gap-6">
+            <div>
+              <input
+                {...register("phone")}
+                type="text"
+                placeholder="Phone Number"
+                className="w-full px-4 py-3 border border-gray-800 bg-transparent focus:ring-1 focus:ring-[#0f1a75] outline-none"
+              />
+            </div>
+
+            <div>
+              <input
+                {...register("company")}
+                type="text"
+                placeholder="Company"
+                className="w-full px-4 py-3 border border-gray-800 bg-transparent focus:ring-1 focus:ring-[#0f1a75] outline-none"
+              />
+            </div>
+          </div>
+
+          <div className="flex items-center gap-3 text-sm">
+            <input
+              type="checkbox"
+              {...register("nda")}
+              className="accent-[#0f1a75]"
+            />
+            <span>Secure data with NDA first</span>
+          </div>
+
+          <div>
+            <textarea
+              {...register("message")}
+              placeholder="Project Details / Message"
+              rows="5"
+              className="w-full px-4 py-3 border border-gray-800 bg-transparent focus:ring-1 focus:ring-[#0f1a75] outline-none resize-none"
+            ></textarea>
+            {errors.message && (
+              <p className="text-red-500 text-sm mt-1">{errors.message.message}</p>
+            )}
+          </div>
+
+          <motion.button
+            type="submit"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="w-full bg-gradient-to-l from-[#0f1a75] to-[#0c1155] text-white py-3 rounded-full font-semibold text-sm transition-all duration-300 shadow-md"
+          >
+            Send Message
+          </motion.button>
+        </form>
+      </motion.div>
+    </div>
   );
 };
 
