@@ -7,18 +7,19 @@ import { FaBrain, FaHeart } from "react-icons/fa";
 const MissionAndVisionSection = () => {
   return (
     <>
-      <div className="pt-14 sm:pt-14 px-4 sm:px-8 md:px-16 lg:px-20 flex items-center justify-center sm:justify-start text-[11px] sm:text-sm md:text-base gap-2 text-gray-300">
-          <img
-            src="./movingIcon.gif"
-            width={22}
-            height={22}
-            className="object-contain"
-            alt="moving icon"
-          />
-          <p className="text-xs">Rooted in values, growing with purpose</p>
-        </div>
+      <div className="pt-14 sm:pt-14 px-4 sm:px-8 md:px-16 lg:px-20 flex items-center justify-center sm:justify-start text-[11px] sm:text-sm md:text-base gap-2 bg-[var(--black)] text-white">
+        <img
+          src="./movingIcon.gif"
+          width={22}
+          height={22}
+          className="object-contain"
+          alt="moving icon"
+        />
+        <p className="text-xs text-[#ffffff]/80">Rooted in values, growing with purpose</p>
+      </div>
 
-      <section className="grid md:grid-cols-2 gap-8 sm:gap-10 max-w-[100%] mx-auto px-5 sm:px-8 md:px-12 lg:px-20 py-24">
+
+      <section className="grid md:grid-cols-2 gap-8 sm:gap-10 max-w-[100%] mx-auto px-5 sm:px-8 md:px-12 lg:px-20 py-24 bg-black">
         <Parallax speed={-5}>
           <Tilt
             tiltMaxAngleX={10}
@@ -31,13 +32,13 @@ const MissionAndVisionSection = () => {
             <motion.div
               whileHover={{ y: -5 }}
               className="rounded-2xl p-6 sm:p-8 md:p-10 
-              shadow-[0_4px_25px_var(--blue)] backdrop-blur-md border border-white/10"
+              shadow-[0_4px_25px_#0f1a75] backdrop-blur-md border border-white/10"
             >
-              <FaHeart className="text-[var(--light)] text-4xl sm:text-5xl mb-4" />
-              <h2 className="text-2xl sm:text-3xl font-semibold mb-3">
+              <FaHeart className="text-white text-4xl sm:text-5xl mb-4" />
+              <h2 className="text-2xl sm:text-3xl font-semibold mb-3 text-white">
                 Our Mission
               </h2>
-              <p className="text-gray-400 text-sm sm:text-base leading-relaxed">
+              <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
                 To empower every individual to achieve holistic well-being
                 through AI-driven tools that connect mind, body, and lifestyle.
               </p>
@@ -57,13 +58,13 @@ const MissionAndVisionSection = () => {
             <motion.div
               whileHover={{ y: -5 }}
               className="rounded-2xl p-6 sm:p-8 md:p-10 
-              shadow-[0_4px_25px_var(--blue)] backdrop-blur-md border border-white/10"
+              shadow-[0_4px_25px_#0f1a75] backdrop-blur-md border border-white/10"
             >
-              <FaBrain className="text-[var(--light)] text-4xl sm:text-5xl mb-4" />
-              <h2 className="text-2xl sm:text-3xl font-semibold mb-3">
+              <FaBrain className="text-white text-4xl sm:text-5xl mb-4" />
+              <h2 className="text-2xl sm:text-3xl font-semibold mb-3 text-white">
                 Our Vision
               </h2>
-              <p className="text-gray-400 text-sm sm:text-base leading-relaxed">
+              <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
                 To create an interconnected ecosystem of wellness apps that help
                 people live mindfully, move intelligently, and heal emotionally.
               </p>

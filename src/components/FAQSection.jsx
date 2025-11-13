@@ -45,22 +45,22 @@ const FAQSection = () => {
 
   return (
     <section
-      className="bg-[#000000] text-white py-20 px-6 sm:px-10 md:px-20 relative font-[Poppins]"
+      className="bg-black text-white py-20 px-6 sm:px-10 md:px-20 relative font-[Poppins]"
       style={{
-        backgroundImage: `linear-gradient(rgba(15, 26, 117, 0.75), rgba(0, 0, 0, 0.95)), url('line-vector.svg')`,
+        backgroundImage: `url('line-vector.svg')`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
     >
-     
+
       <div className="flex gap-2 items-center mb-20">
         <img src="./movingIcon.gif" width={22} alt="Moving Icon" />
         <p className="text-xs tracking-wide text-[#ffffff]/80">FAQ’s</p>
       </div>
 
-     
+
       <div className="grid place-items-start md:grid-cols-2 grid-cols-1 gap-20">
-        
+
         <div>
           <motion.h1
             initial={{ opacity: 0, y: 40 }}
@@ -81,7 +81,7 @@ const FAQSection = () => {
 
 
         <div className="relative max-w-4xl mx-auto h-[500px] scrollbar-thin scrollbar-thumb-[#0f1a75] scrollbar-track-[#1a1a1a] overflow-y-auto overflow-x-hidden">
-          <h2 className="text-3xl font-semibold mb-10 text-center text-[var(--light)]">
+          <h2 className="text-3xl font-semibold mb-10 text-center text-white">
             Frequently Asked Questions
           </h2>
 
@@ -99,9 +99,9 @@ const FAQSection = () => {
                 >
                   <span className="text-sm text-[#ffffff]/90">{faq.question}</span>
                   {openIndex === index ? (
-                    <Minus className="w-5 h-5 text-[var(--light)]" />
+                    <Minus className="w-5 h-5 text-white" />
                   ) : (
-                    <Plus className="w-5 h-5 text-[var(--light)]" />
+                    <Plus className="w-5 h-5 text-white" />
                   )}
                 </button>
 

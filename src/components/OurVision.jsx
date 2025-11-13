@@ -9,23 +9,23 @@ const OurVision = () => {
       icon: <FaMicrochip className="text-[#0f1a75] text-3xl sm:text-4xl mb-3" />,
       title: "AI-Driven Future",
       desc: "Creating intelligent systems that evolve, learn, and drive human-centered innovation.",
-      gradient: "from-[#0f1a75] via-[#1e3c72] to-[#ffffff]",
+      gradient: "from-[#0f1a75] via-[#5a6df5] to-[#ffffff]",
       glow: "hover:shadow-[#0f1a75]/40",
       id: 1,
     },
     {
-      icon: <FaNetworkWired className="text-[#1e3c72] text-3xl sm:text-4xl mb-3" />,
+      icon: <FaNetworkWired className="text-[#5a6df5] text-3xl sm:text-4xl mb-3" />,
       title: "Connected Intelligence",
       desc: "Building seamless digital ecosystems where data, design, and AI coexist in perfect harmony.",
-      gradient: "from-[#0f1a75] via-[#1e3c72] to-[#ffffff]",
-      glow: "hover:shadow-[#1e3c72]/40",
+      gradient: "from-[#0f1a75] via-[#5a6df5] to-[#ffffff]",
+      glow: "hover:shadow-[#5a6df5]/40",
       id: 2,
     },
     {
       icon: <FaGlobeAmericas className="text-[#ffffff] text-3xl sm:text-4xl mb-3" />,
       title: "Global Impact",
       desc: "Empowering industries and communities worldwide through sustainable digital transformation.",
-      gradient: "from-[#0f1a75] via-[#1e3c72] to-[#ffffff]",
+      gradient: "from-[#0f1a75] via-[#5a6df5] to-[#ffffff]",
       glow: "hover:shadow-[#ffffff]/30",
       id: 3,
     },
@@ -33,23 +33,22 @@ const OurVision = () => {
 
   return (
     <section
-      className="bg-[#000000] font-[Poppins] text-white py-14 sm:py-16 lg:py-24 bg-no-repeat bg-cover bg-center"
+      className="bg-black font-[Poppins] text-white py-14 sm:py-16 lg:py-24 bg-no-repeat bg-cover bg-center"
       style={{
-        backgroundImage: `linear-gradient(rgba(15, 26, 117, 0.7), rgba(0, 0, 0, 0.9)), url('line-vector.svg')`,
+        backgroundImage: `url('line-vector.svg')`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10 lg:px-12">
-        {/* Header */}
         <div className="flex items-center text-[12px] mb-10 gap-2">
           <img src="./movingIcon.gif" width={20} alt="Moving icon" />
           <p>Building Intelligence Beyond Boundaries</p>
         </div>
 
-        {/* Content Row */}
+
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 mb-14 items-center">
-          {/* Left Video */}
+
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -66,7 +65,7 @@ const OurVision = () => {
             />
           </motion.div>
 
-          {/* Right Text */}
+
           <motion.div
             className="text-center lg:text-left space-y-6"
             initial={{ opacity: 0, y: 30 }}
@@ -75,7 +74,7 @@ const OurVision = () => {
           >
             <div className="flex items-center gap-3 sm:gap-4 mb-4 justify-center lg:justify-start">
               <div className="w-10 sm:w-12 h-[2px] bg-[#0f1a75]" />
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#0f1a75] to-[#ffffff]">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#0f1a75] to-[#5a6df5]">
                 Our Vision
               </h2>
             </div>
@@ -88,7 +87,7 @@ const OurVision = () => {
             >
               At <span className="text-[#0f1a75] font-semibold">Apexion</span>, we envision a future where technology
               and intelligence converge to create purposeful innovation. Our mission is to engineer
-              solutions that are not only smart but also sustainable—bridging AI, data, and design
+              solutions that are not only smart but also sustainable — bridging AI, data, and design
               to empower businesses and inspire progress across the globe.
             </motion.p>
 
@@ -100,7 +99,7 @@ const OurVision = () => {
           </motion.div>
         </div>
 
-        {/* Vision Cards */}
+
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 lg:gap-8">
           {cards.map((card, i) => (
             <motion.div
@@ -113,7 +112,7 @@ const OurVision = () => {
               <Tilt
                 glareEnable
                 glareMaxOpacity={0.2}
-                glareColor={i === 0 ? "#0f1a75" : i === 1 ? "#1e3c72" : "#ffffff"}
+                glareColor={i === 0 ? "#0f1a75" : i === 1 ? "#5a6df5" : "#ffffff"}
                 scale={1.02}
                 tiltMaxAngleX={12}
                 tiltMaxAngleY={12}

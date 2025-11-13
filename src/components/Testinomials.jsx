@@ -35,7 +35,7 @@ const testimonials = [
 const Testimonials = () => {
   return (
     <section
-      className=" bg-black text-white py-24 px-6 md:px-16 lg:px-28"
+      className="bg-black text-white py-24 px-6 md:px-16 lg:px-28"
       style={{
         backgroundImage: `linear-gradient(rgba(0, 60, 0, 0.15), rgba(0, 0, 0, 0.85)), url('line-vector.svg')`,
         backgroundSize: "cover",
@@ -47,6 +47,7 @@ const Testimonials = () => {
           <img src="./movingIcon.gif" width={20} />
           <p>Hear It Straight From Our Clients</p>
         </div>
+
         <motion.div
           className="mb-14"
           initial={{ opacity: 0, y: 20 }}
@@ -54,8 +55,8 @@ const Testimonials = () => {
           transition={{ duration: 0.6 }}
         >
           <div className="flex items-center gap-4 mb-2">
-            <div className="w-12 h-[2px] bg-[#34C759]" />
-            <h2 className="text-4xl md:text-5xl font-bold font-poppins bg-clip-text text-transparent bg-gradient-to-r from-[#34C759] to-[#D4F4E2]">
+            <div className="w-12 h-[2px] bg-[#0f1a75]" />
+            <h2 className="text-4xl md:text-5xl font-bold font-poppins bg-clip-text text-transparent bg-gradient-to-r from-[#0f1a75] to-[#5a6df5]">
               What People Are Saying
             </h2>
           </div>
@@ -72,10 +73,10 @@ const Testimonials = () => {
             768: { slidesPerView: 2 },
           }}
           autoplay={{
-            delay: 1500, 
+            delay: 1500,
             disableOnInteraction: false,
           }}
-          speed={500} 
+          speed={500}
           loop={true}
           allowTouchMove={true}
         >
@@ -86,7 +87,7 @@ const Testimonials = () => {
                 initial={{ opacity: 0, y: 0 }}
                 whileInView={{ opacity: 1, y: 0 }}
               >
-                <FaQuoteLeft className="text-[#34C759] text-3xl mb-4 opacity-80" />
+                <FaQuoteLeft className="text-[#0f1a75] text-3xl mb-4 opacity-80" />
                 <p className="text-gray-100 text-lg leading-relaxed font-inter mb-6 italic">
                   {item.text}
                 </p>
@@ -95,7 +96,7 @@ const Testimonials = () => {
                   <img
                     src={item.image}
                     alt={item.name}
-                    className="w-12 h-12 rounded-full object-cover border-2 border-[#34C759]"
+                    className="w-12 h-12 rounded-full object-cover border-2 border-[#0f1a75]"
                   />
                   <div>
                     <h4 className="font-semibold text-white text-lg font-poppins">
