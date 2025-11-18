@@ -140,7 +140,7 @@ const Navbar = ({ activePage }) => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.25, ease: "easeOut" }}
-            className="md:hidden absolute top-full left-0 w-full bg-black/50 backdrop-blur-lg border-t border-b border-green-900 z-10"
+            className="md:hidden absolute top-full left-0 w-full bg-black/50 backdrop-blur-lg border-t border-b border-[var(--blue)] z-10"
           >
             <div className="px-4 py-4 space-y-4">
               {["Home", "About", "Contact"].map((name) => (
@@ -160,7 +160,7 @@ const Navbar = ({ activePage }) => {
               <Link
                 to="/contact"
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="block bg-gradient-to-l from-green-600 to-green-950 hover:bg-green-600 text-white text-center py-2 rounded-full font-medium"
+                className="block bg-gradient-to-l from-[var(--blue)] to-[var(--black)] hover:bg-[var(--blue)] text-white text-center py-2 rounded-full font-medium"
               >
                 Join Now
               </Link>
@@ -264,7 +264,7 @@ const Navbar = ({ activePage }) => {
 
                 <button
                   type="submit"
-                  className="bg-gradient-to-l text-white font-bold from-green-600 to-green-950 hover:bg-black py-2 rounded-full transition px-16"
+                  className="bg-gradient-to-l text-white font-bold from-[var(--blue)] to-[var(--black)] hover:bg-black py-2 rounded-full transition px-16"
                 >
                   Submit
                 </button>

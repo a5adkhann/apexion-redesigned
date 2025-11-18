@@ -39,8 +39,8 @@ const MissionAndVisionSection = () => {
                 Our Mission
               </h2>
               <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
-                To empower every individual to achieve holistic well-being
-                through AI-driven tools that connect mind, body, and lifestyle.
+                To empower every individual to achieve holistic well-being through AI-driven tools that connect mind, body, and lifestyle. We provide personalized, data-backed insights and actionable strategies. Apexion Web is dedicated to cultivating a healthier
+                future by transforming complex well-being data into simple, daily guidance.
               </p>
             </motion.div>
           </Tilt>
@@ -65,8 +65,8 @@ const MissionAndVisionSection = () => {
                 Our Vision
               </h2>
               <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
-                To create an interconnected ecosystem of wellness apps that help
-                people live mindfully, move intelligently, and heal emotionally.
+                To empower every individual to achieve holistic well-being through AI-driven tools that connect mind, body, and lifestyle.** Apexion Web is dedicated to
+                creating intelligent, personalized solutions that transform how you live, work, and grow.
               </p>
             </motion.div>
           </Tilt>

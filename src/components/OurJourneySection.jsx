@@ -20,7 +20,7 @@ const OurJourneySection = () => {
           className="object-contain"
           alt="moving icon"
         />
-        <p className="text-xs">Fuelled by dreams, driven by results</p>
+        <p className="text-xs">Fuelled by innovation, shaping the future</p>
       </div>
 
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
@@ -31,27 +31,42 @@ const OurJourneySection = () => {
           transition={{ duration: 0.6 }}
         >
           <div className="flex flex-col md:flex-row items-center justify-start gap-3 mb-6">
-          <div className="w-12 h-[2px] bg-[var(--light)]" />
-          <h2 className="text-3xl sm:text-4xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[var(--blue)] to-[#FFF]">
-            Our Journey
-          </h2>
-        </div>
+            <div className="w-12 h-[2px] bg-[var(--light)]" />
+            <h2 className="text-3xl sm:text-4xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[var(--blue)] to-[#FFF]">
+              Our Journey
+            </h2>
+          </div>
 
-          <p className="text-xs sm:text-sm md:text-base leading-relaxed">
-            Founded in 2023, Wellnex Systems began as a small vision — to merge
-            the power of artificial intelligence with emotional intelligence.
-          </p>
+    
+          <div>
+            <h3 className="text-lg sm:text-xl font-semibold text-[var(--light)]">2023 — Apexion Ltd. Comes to Life</h3>
+            <p className="text-xs sm:text-sm md:text-base leading-relaxed mt-1">
+              Apexion Ltd. was founded with a mission to blend advanced technology and visionary architecture—creating environments that are intelligent, future-focused, and sustainably designed.
+            </p>
+          </div>
 
-          <p className="text-xs sm:text-sm md:text-base leading-relaxed">
-            Over time, we grew into a team of passionate creators, developers,
-            and wellness advocates building products like SoulWhispers and
-            GymKey to inspire smarter living.
-          </p>
+  
+          <div>
+            <h3 className="text-lg sm:text-xl font-semibold text-[var(--light)]">2024 — Smart Architecture & Digital Integration</h3>
+            <p className="text-xs sm:text-sm md:text-base leading-relaxed mt-1">
+              We completed our first flagship project, combining architectural innovation with digital solutions to deliver efficiency, intelligent automation, and modern design excellence.
+            </p>
+          </div>
 
-          <p className="text-xs sm:text-sm md:text-base leading-relaxed">
-            Our path is just beginning. With every innovation, we aim to bring
-            balance back to a fast-paced digital world.
-          </p>
+     
+          <div>
+            <h3 className="text-lg sm:text-xl font-semibold text-[var(--light)]">2025 — Scaling Sustainable Solutions</h3>
+            <p className="text-xs sm:text-sm md:text-base leading-relaxed mt-1">
+              Through strategic partnerships and expanding teams, we began implementing eco-driven designs and digital products that empower businesses and communities to evolve smarter and faster.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-lg sm:text-xl font-semibold text-[var(--light)]">2026 — Smart Cities & Future-Ready Environments</h3>
+            <p className="text-xs sm:text-sm md:text-base leading-relaxed mt-1">
+              We introduced solutions focused on urban sustainability, smart infrastructure, and inclusive design—paving the way for intelligent, greener cities of tomorrow.
+            </p>
+          </div>
         </motion.div>
 
         <div className="flex justify-center md:justify-end w-full">

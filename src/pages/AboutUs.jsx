@@ -3,7 +3,7 @@ import AboutHeroSection from "../components/AboutHeroSection";
 import MissionAndVisionSection from "../components/Mission&VisionSection";
 import OurJourneySection from "../components/OurJourneySection";
 import CoreValuesSection from "../components/CoreValuesSection";
-import JoinTheWellnessSection from "../components/JoinTheWellnessSection";
+import JoinApexion from "../components/JoinApexion";
 import Loader from "../components/Loader";
 import ProgressBar from "../components/ProgressBar";
 import FAQSection from "../components/FAQSection";
@@ -36,7 +36,7 @@ const AboutUs = () => {
 
       <CoreValuesSection/>
 
-      <JoinTheWellnessSection/>
+      <JoinApexion/>
 
       <FAQSection/>
     </div>

@@ -7,29 +7,21 @@ import "swiper/css";
 
 const testimonials = [
   {
-    name: "Ayesha R.",
-    role: "SoulWhispers User – Karachi",
-    text: "“SoulWhispers helped me find calm in chaos. It’s like therapy in my pocket.”",
-    image: "https://randomuser.me/api/portraits/women/79.jpg",
+    name: "Salman Hameed.",
+    text: "“Working with Apexion felt like working with a team that truly cared.They took time to understand what we needed and brought our ideas to life with clarity and creativity.The process was smooth, the communication was great, and the end result? Even better than we expected. Grateful for the collaboration!”",
+    image: "./testimonial1.jpg",
   },
   {
-    name: "Imran M.",
-    role: "Gym Owner – Lahore",
-    text: "“GymKey has transformed how I manage my gym. My members love the convenience.”",
-    image: "https://randomuser.me/api/portraits/men/32.jpg",
+    name: "M.Waseem Akram.",
+    text: "“Big thanks to the team at  Apexion.  They really understood what I needed and brought my website idea to life better than I imagined. The process was smooth, the team stayed in touch throughout, and the final result was spot on. Super happy with the outcome..”",
+    image: "./testimonial2.jpg",
   },
-  {
-    name: "Sara K.",
-    role: "Corporate Wellness Partner – Islamabad",
-    text: "“Wellnex Systems helped our employees find balance and boost productivity.”",
-    image: "https://randomuser.me/api/portraits/women/22.jpg",
+   {
+    name: "M.Waseem Akram.",
+    text: "“Big thanks to the team at  Apexion.  They really understood what I needed and brought my website idea to life better than I imagined. The process was smooth, the team stayed in touch throughout, and the final result was spot on. Super happy with the outcome..”",
+    image: "./testimonial2.jpg",
   },
-  {
-    name: "Ali Z.",
-    role: "Fitness Enthusiast – Karachi",
-    text: "“Everything I need — workouts, mindfulness, and progress tracking — all in one ecosystem.”",
-    image: "https://randomuser.me/api/portraits/men/11.jpg",
-  },
+  
 ];
 
 const Testimonials = () => {

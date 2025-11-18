@@ -77,7 +77,7 @@ const Heroo = () => {
                 Join the Movement
               </Link>
               <Link
-                to="/apps"
+                to="/"
                 className="border border-[var(--light)] text-[var(--light)] px-6 sm:px-8 py-2.5 sm:py-3 rounded-full font-semibold text-sm sm:text-base font-poppins hover:border-[var(--blue)] hover:shadow-[var(--blue)] transition-all duration-200"
               >
                 Explore Our Apps
@@ -85,7 +85,7 @@ const Heroo = () => {
             </div>
           </div>
 
-          {/* Right Icons
+          {/* Right Icons */}
           <div className="hidden md:flex justify-center items-center relative">
             <div className="relative flex justify-center items-center w-[260px] sm:w-[300px] md:w-[320px] h-[260px] sm:h-[300px] md:h-[320px]">
               <motion.div
@@ -126,7 +126,7 @@ const Heroo = () => {
 
               <MdOutlineSelfImprovement className="text-[220px] sm:text-[260px] md:text-[300px] text-[#D4F4E2]/70" />
             </div>
-          </div> */}
+          </div>
         </div>
       </div>
     </section>

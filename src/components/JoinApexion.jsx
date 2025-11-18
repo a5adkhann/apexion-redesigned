@@ -8,7 +8,7 @@ const JoinTheWellnessSection = () => {
       <section
         className="py-20 sm:py-24 text-center bg-[#0b0d13] px-4 sm:px-8"
         style={{
-          backgroundImage: `url('joinTheWellnessBG.jpg')`,
+          backgroundImage: `url('joinApexion.jpg')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
@@ -26,7 +26,7 @@ const JoinTheWellnessSection = () => {
             </h2>
           </div>
         </motion.h2>
-        <p className="text-gray-400 mb-6 sm:mb-8 max-w-xl mx-auto text-sm sm:text-base">
+        <p className="text-gray-800 mb-6 sm:mb-8 max-w-xl mx-auto text-sm sm:text-base">
           Be part of a global movement towards mindful, intelligent living.
           Together, let’s shape the future of well-being.
         </p>
