@@ -202,7 +202,7 @@ const Navbar = ({ activePage }) => {
                 <div>
                   <button
                     onClick={() => setIsModalOpen(false)}
-                    className="text-gray-500 hover:text-[#34C759] transition"
+                    className="text-gray-500 hover:text-[var(--blue)] transition"
                   >
                     <CircleX className="w-6 h-6" />
                   </button>
@@ -244,7 +244,7 @@ const Navbar = ({ activePage }) => {
                 <div>
                   <input
                     type="text"
-                    placeholder="Company Name (if B2B)"
+                    placeholder="Company Name "
                     {...register("company")}
                     className="w-full border border-gray-300 px-4 py-2 focus:outline-none"
                   />
