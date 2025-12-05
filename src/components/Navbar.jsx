@@ -196,7 +196,7 @@ const Navbar = ({ activePage }) => {
               <div className="flex items-center justify-between text-[12px] mb-10 gap-2">
                 <div className="flex gap-2 items-center">
                   <Ribbon className="text-blue-800 text-sm"/>
-                  <p>Let’s Get Started</p>
+                  <p className="text-black">Let’s Get Started</p>
                 </div>
 
                 <div>
