@@ -18,7 +18,7 @@ const ContactHeroSection = () => {
           transition={{ duration: 0.8 }}
           className="text-4xl sm:text-5xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[var(--blue)] to-[var(--light)] mb-4 sm:mb-5"
         >
-          Get in Touch with <br /> Wellnex Systems
+          Get in Touch with <br /> Apexion
         </motion.h1>
         <motion.p
           initial={{ opacity: 0 }}

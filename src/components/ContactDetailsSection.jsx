@@ -5,9 +5,9 @@ import { motion } from "framer-motion";
 const ContactDetailsSection = () => {
   return (
     <section
-      className="text-center py-20 border-t border-white/10 px-6"
+      className="bg-black text-center py-20 border-t border-white/10 px-6"
       style={{
-        backgroundImage: `url('getInTouch.jpg')`,
+        backgroundImage: `linear-gradient(rgba(0, 24, 117, 0.15), rgba(0, 0, 0, 0.85)), url('line-vector.svg')`,
         backgroundSize: "cover",
         backgroundPosition: "start",
       }}
@@ -21,18 +21,18 @@ const ContactDetailsSection = () => {
         Get In Touch
       </motion.h2>
 
-      <div className="flex flex-wrap justify-center gap-10 mb-10">
+      <div className="flex flex-wrap justify-center gap-10 mb-10 items-center">
         <div>
           <FaEnvelope className="text-[var(--light)] text-2xl mx-auto mb-2" />
-          <p className="text-gray-300">hello@apexion.com</p>
+          <p className="text-gray-300">apexion.space@gmail.com</p>
         </div>
         <div>
           <FaPhoneAlt className="text-[var(--light)] text-2xl mx-auto mb-2" />
-          <p className="text-gray-300">+92 300 1234567</p>
+          <p className="text-gray-300">+92 3482237240</p>
         </div>
         <div>
           <FaMapMarkerAlt className="text-[var(--light)] text-2xl mx-auto mb-2" />
-          <p className="text-gray-300">123 Innovation Street, Karachi</p>
+          <p className="text-gray-300">511, Suite # 202-203, <br /> Main Shahra-e-Faisal, <br /> near Lal Kothi (house), Karachi, 75400</p>
         </div>
       </div>
 

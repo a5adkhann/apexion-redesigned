@@ -4,18 +4,13 @@ import { GiTeamIdea } from "react-icons/gi";
 import { MdOutlineVisibility } from "react-icons/md";
 import { motion } from "framer-motion";
 import Tilt from "react-parallax-tilt";
+import { Ribbon } from "lucide-react";
 
 const CoreValuesSection = () => {
   return (
     <section className="py-20 sm:py-24 px-4 sm:px-8 md:px-16 lg:px-20 bg-gradient-to-r from-[var(--black)] to-[#0b0d13]">
       <div className="flex items-center justify-center sm:justify-start text-[11px] sm:text-sm md:text-base gap-2 mb-8 sm:mb-10 text-gray-300">
-        <img
-          src="./movingIcon.gif"
-          width={22}
-          height={22}
-          className="object-contain"
-          alt="moving icon"
-        />
+        <Ribbon className="text-blue-800"/>
         <p className="text-xs">
           Our approach empowers us to create exceptional experiences that fuel growth
         </p>

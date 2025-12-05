@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Plus, Minus } from "lucide-react";
+import { Plus, Minus, Ribbon } from "lucide-react";
 
 const faqs = [
   {
@@ -54,7 +54,7 @@ const FAQSection = () => {
     >
 
       <div className="flex gap-2 items-center mb-20">
-        <img src="./movingIcon.gif" width={22} alt="Moving Icon" />
+        <Ribbon className="text-blue-800"/>
         <p className="text-xs tracking-wide text-[#ffffff]/80">FAQ’s</p>
       </div>
 

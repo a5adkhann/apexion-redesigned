@@ -4,6 +4,7 @@ import { FaQuoteLeft } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
+import { Ribbon } from "lucide-react";
 
 const testimonials = [
   {
@@ -36,7 +37,7 @@ const Testimonials = () => {
     >
       <div className="max-w-7xl mx-auto">
         <div className="flex items-center text-[12px] mb-10 gap-2">
-          <img src="./movingIcon.gif" width={20} />
+          <Ribbon className="text-blue-800"/>
           <p>Hear It Straight From Our Clients</p>
         </div>
 

@@ -3,18 +3,13 @@ import { Parallax } from "react-scroll-parallax";
 import { motion } from "framer-motion";
 import Tilt from "react-parallax-tilt";
 import { FaBrain, FaHeart } from "react-icons/fa";
+import { Ribbon } from "lucide-react";
 
 const MissionAndVisionSection = () => {
   return (
     <>
       <div className="pt-14 sm:pt-14 px-4 sm:px-8 md:px-16 lg:px-20 flex items-center justify-center sm:justify-start text-[11px] sm:text-sm md:text-base gap-2 bg-[var(--black)] text-white">
-        <img
-          src="./movingIcon.gif"
-          width={22}
-          height={22}
-          className="object-contain"
-          alt="moving icon"
-        />
+        <Ribbon className="text-blue-800"/>
         <p className="text-xs text-[#ffffff]/80">Rooted in values, growing with purpose</p>
       </div>
 

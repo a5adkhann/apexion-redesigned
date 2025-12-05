@@ -8,25 +8,12 @@ import Loader from "../components/Loader";
 import ContactDetailsSection from "../components/ContactDetailsSection";
 import WhyConnectSection from "../components/WhyConnectSection";
 import ProgressBar from "../components/ProgressBar";
-import AddressMapSection from "../components/AddressMapSection";
 
 const Contact = () => {
 
-  const [loading, setLoading] = useState(true);
-  
     useEffect(() => {
       window.scrollTo({ top: 0, behavior: "smooth" });
-  
-      const timer = setTimeout(() => {
-        setLoading(false);
-      }, 2000);
-  
-      return () => clearTimeout(timer);
     }, []);
-  
-    if (loading) {
-      return <Loader />;
-    }
 
   return (
     <div className="font-[Poppins] text-black bg-gradient-to-b from-[#0b0d13] via-[#111827] to-[#0b0d13]">
@@ -48,7 +35,6 @@ const Contact = () => {
 
       <ContactDetailsSection/>
 
-      <AddressMapSection/>
     </div>
   );
 };

@@ -35,23 +35,20 @@ const Hero = () => {
         
         
           transition={{ duration: 0.8, }}
-          className="relative w-[500px] h-[500px] rounded-full   overflow-hidden cursor-pointer"
+          className="relative w-[500px] h-[500px] rounded-full overflow-hidden cursor-pointer"
         >
           <AnimatePresence mode="wait">
            
               <motion.div
                 key="rabbit"
-                className="absolute inset-0 flex justify-center items-center"
+                className="absolute flex justify-center items-center"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
                 transition={{ duration: 0.6 }}
               >
-                <DotLottieReact
-                  src="https://lottie.host/621877b8-483c-4a67-a546-fd91ccdb9178/uaDzo5rpJb.lottie"
-                  loop
-                  autoplay
-                  style={{ width: "150%", height: "125%" }}
+                <img
+                  src="./movingIcon.gif"
                 />
               </motion.div>
        

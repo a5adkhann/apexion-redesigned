@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import { CircleX } from "lucide-react";
+import { CircleX, Ribbon } from "lucide-react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -99,7 +99,7 @@ const Navbar = ({ activePage }) => {
             <img
               src="logo.png"
               alt="Logo"
-              className="w-37 h-12 object-cover"
+              className="w-[35px]"
             />
           </Link>
         </motion.div>
@@ -195,7 +195,7 @@ const Navbar = ({ activePage }) => {
             >
               <div className="flex items-center justify-between text-[12px] mb-10 gap-2">
                 <div className="flex gap-2 items-center">
-                  <img src="./movingIcon.gif" width={20} />
+                  <Ribbon className="text-blue-800 text-sm"/>
                   <p>Let’s Get Started</p>
                 </div>
 

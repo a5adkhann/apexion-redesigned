@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Tilt from "react-parallax-tilt";
 import { FaMicrochip, FaNetworkWired, FaGlobeAmericas } from "react-icons/fa";
+import { Ribbon } from "lucide-react";
 
 const OurVision = () => {
   const cards = [
@@ -42,7 +43,7 @@ const OurVision = () => {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10 lg:px-12">
         <div className="flex items-center text-[12px] mb-10 gap-2">
-          <img src="./movingIcon.gif" width={20} alt="Moving icon" />
+          <Ribbon className="text-blue-800"/>
           <p>Building Intelligence Beyond Boundaries</p>
         </div>
 

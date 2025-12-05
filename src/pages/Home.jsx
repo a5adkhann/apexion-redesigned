@@ -12,21 +12,10 @@ import ScrollStackSection from "../components/ScrollStackSection";
 import WhyApexion from "../components/WhyApexion";
 
 const Home = () => {
-  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
-
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 2000);
-
-    return () => clearTimeout(timer);
   }, []);
-
-  if (loading) {
-    return <Loader />;
-  }
 
   return (
     <>
