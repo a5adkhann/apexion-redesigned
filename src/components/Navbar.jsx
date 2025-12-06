@@ -69,7 +69,13 @@ const Navbar = ({ activePage }) => {
         }}
         className="mx-auto flex items-center justify-center md:justify-between px-6 py-4 rounded-full mt-2 transition-all duration-300"
       >
-        <div className="md:hidden absolute left-6">
+
+        {/* MOBILE HEADER (Logo Left + Toggle Right) */}
+        <div className="md:hidden flex w-full justify-between items-center">
+          <Link to="/">
+            <img src="logo.png" alt="Logo" className="w-[35px]" />
+          </Link>
+
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             className="text-white hover:text-gray-300 transition"
@@ -90,35 +96,33 @@ const Navbar = ({ activePage }) => {
           </button>
         </div>
 
+        {/* DESKTOP LOGO */}
         <motion.div
           animate={{ scale: isScrolled ? 0.9 : 1 }}
           transition={{ duration: 0.3, ease: "easeOut" }}
-          className="flex items-center space-x-2"
+          className="hidden md:flex items-center space-x-2"
         >
           <Link to="/">
-            <img
-              src="logo.png"
-              alt="Logo"
-              className="w-[35px]"
-            />
+            <img src="logo.png" alt="Logo" className="w-[35px]" />
           </Link>
         </motion.div>
 
+        {/* DESKTOP NAV LINKS */}
         <div className="hidden md:flex items-center space-x-10">
           {["Home", "About", "Contact"].map((name) => (
             <Link
               key={name}
               to={`/${name === "Home" ? "" : name.toLowerCase()}`}
-              className={`text-white hover:text-[var(--blue)] hover:-translate-y-1 hover:font-bold font-medium transition ${activePage === name.toLowerCase()
-                ? "text-[var(--blue)] font-bold"
-                : ""
-                }`}
+              className={`text-white hover:text-[var(--blue)] hover:-translate-y-1 hover:font-bold font-medium transition ${
+                activePage === name.toLowerCase() ? "text-[var(--blue)] font-bold" : ""
+              }`}
             >
               {name}
             </Link>
           ))}
         </div>
 
+        {/* DESKTOP BUTTON */}
         <motion.div
           whileHover={{ scale: 1.08 }}
           whileTap={{ scale: 0.96 }}
@@ -133,25 +137,27 @@ const Navbar = ({ activePage }) => {
         </motion.div>
       </motion.div>
 
+      {/* =============================
+           MOBILE MENU (SLIDES FROM RIGHT)
+      ============================== */}
       <AnimatePresence>
         {isMobileMenuOpen && (
           <motion.div
-            initial={{ opacity: 0, y: -10 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
+            initial={{ x: 200, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            exit={{ x: 200, opacity: 0 }}
             transition={{ duration: 0.25, ease: "easeOut" }}
-            className="md:hidden absolute top-full left-0 w-full bg-black/50 backdrop-blur-lg border-t border-b border-[var(--blue)] z-10"
+            className="md:hidden fixed top-0 right-0 h-full w-[70%] bg-black/50 backdrop-blur-lg border-l border-[var(--blue)] z-40 px-4 py-6"
           >
-            <div className="px-4 py-4 space-y-4">
+            <div className="space-y-4 mt-10">
               {["Home", "About", "Contact"].map((name) => (
                 <Link
                   key={name}
                   to={`/${name === "Home" ? "" : name.toLowerCase()}`}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className={`block text-white hover:text-black transition ${activePage === name.toLowerCase()
-                    ? "text-black font-bold"
-                    : ""
-                    }`}
+                  className={`block text-white hover:text-black transition ${
+                    activePage === name.toLowerCase() ? "text-black font-bold" : ""
+                  }`}
                 >
                   {name}
                 </Link>
@@ -171,12 +177,14 @@ const Navbar = ({ activePage }) => {
               >
                 Speak to an Expert
               </Link>
-
             </div>
           </motion.div>
         )}
       </AnimatePresence>
 
+      {/* =============================
+           MODAL (UNCHANGED)
+      ============================== */}
       <AnimatePresence>
         {isModalOpen && (
           <motion.div
@@ -195,18 +203,16 @@ const Navbar = ({ activePage }) => {
             >
               <div className="flex items-center justify-between text-[12px] mb-10 gap-2">
                 <div className="flex gap-2 items-center">
-                  <Ribbon className="text-blue-800 text-sm"/>
+                  <Ribbon className="text-blue-800 text-sm" />
                   <p className="text-black">Let’s Get Started</p>
                 </div>
 
-                <div>
-                  <button
-                    onClick={() => setIsModalOpen(false)}
-                    className="text-gray-500 hover:text-[var(--blue)] transition"
-                  >
-                    <CircleX className="w-6 h-6" />
-                  </button>
-                </div>
+                <button
+                  onClick={() => setIsModalOpen(false)}
+                  className="text-gray-500 hover:text-[var(--blue)] transition"
+                >
+                  <CircleX className="w-6 h-6" />
+                </button>
               </div>
 
               <h3 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-10">
@@ -224,7 +230,9 @@ const Navbar = ({ activePage }) => {
                       className="w-full border border-gray-300 px-4 py-2 focus:outline-none"
                     />
                     {errors.name && (
-                      <p className="text-red-500 text-sm mt-1">{errors.name.message}</p>
+                      <p className="text-red-500 text-sm mt-1">
+                        {errors.name.message}
+                      </p>
                     )}
                   </div>
 
@@ -236,7 +244,9 @@ const Navbar = ({ activePage }) => {
                       className="w-full border border-gray-300 px-4 py-2 focus:outline-none"
                     />
                     {errors.email && (
-                      <p className="text-red-500 text-sm mt-1">{errors.email.message}</p>
+                      <p className="text-red-500 text-sm mt-1">
+                        {errors.email.message}
+                      </p>
                     )}
                   </div>
                 </div>
@@ -258,7 +268,9 @@ const Navbar = ({ activePage }) => {
                     className="w-full border border-gray-300 px-4 py-2 focus:outline-none"
                   ></textarea>
                   {errors.message && (
-                    <p className="text-red-500 text-sm mt-1">{errors.message.message}</p>
+                    <p className="text-red-500 text-sm mt-1">
+                      {errors.message.message}
+                    </p>
                   )}
                 </div>
 
