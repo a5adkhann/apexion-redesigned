@@ -55,8 +55,7 @@ const Heroo = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
             >
-              Apexion Web – Redefining the digital frontier. We harness cutting-edge AI and innovative solutions to drive growth, transform businesses,
-              and shape the future of the web. Your vision, powered by intelligence, crafted for tomorrow.
+              Innovating the digital landscape with intelligence and creativity. Transform your business, unlock new opportunities, and design the web of tomorrow.
             </motion.p>
 
             <motion.div
@@ -65,7 +64,7 @@ const Heroo = () => {
               whileInView={{ opacity: 1 }}
               transition={{ delay: 0.2 }}
             >
-              Trusted Worldwide
+              Worldwide Reliability
             </motion.div>
 
             <div className="flex flex-col sm:flex-row justify-center md:justify-start gap-4 pt-4 sm:pt-6">
