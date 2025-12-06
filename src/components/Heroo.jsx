@@ -71,13 +71,13 @@ const Heroo = () => {
             <div className="flex flex-col sm:flex-row justify-center md:justify-start gap-4 pt-4 sm:pt-6">
               <Link
                 to="/contact"
-                className="bg-gradient-to-l from-[var(--blue)] to-[var(--black)] text-white px-6 sm:px-8 py-2.5 sm:py-3 rounded-full font-semibold text-sm sm:text-base font-poppins shadow-md hover:shadow-xl hover:scale-105 transition-all duration-200"
+                className="bg-gradient-to-l text-center from-[var(--blue)] to-[var(--black)] text-white px-6 sm:px-8 py-2.5 sm:py-3 rounded-full font-semibold text-sm sm:text-base font-poppins shadow-md hover:shadow-xl hover:scale-105 transition-all duration-200"
               >
                 Reach Out
               </Link>
               <Link
                 to="/about"
-                className="border border-[var(--light)] text-[var(--light)] px-6 sm:px-8 py-2.5 sm:py-3 rounded-full font-semibold text-sm sm:text-base font-poppins hover:border-[var(--blue)] hover:shadow-[var(--blue)] transition-all duration-200"
+                className="border text-center border-[var(--light)] text-[var(--light)] px-6 sm:px-8 py-2.5 sm:py-3 rounded-full font-semibold text-sm sm:text-base font-poppins hover:border-[var(--blue)] hover:shadow-[var(--blue)] transition-all duration-200"
               >
                 Explore Us
               </Link>
